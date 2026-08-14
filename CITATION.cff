@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it and the primary MuLTEE paper."
+title: "Snowflake Evolution Lab"
+type: software
+version: 0.1.0
+date-released: 2026-08-14
+authors:
+  - family-names: Lindgreen
+    given-names: David
+repository-code: "https://github.com/lindgreendavid/snowflake-evolution-lab"
+url: "https://lindgreendavid.github.io/snowflake-evolution-lab/"
+license: MIT
+preferred-citation:
+  type: article
+  title: "De novo evolution of macroscopic multicellularity"
+  authors:
+    - family-names: Bozdag
+      given-names: G. O.
+  journal: Nature
+  volume: 617
+  start: 747
+  end: 754
+  year: 2023
+  doi: "10.1038/s41586-023-06052-1"

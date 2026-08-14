@@ -1,0 +1,87 @@
+[
+  {
+    "treatment": "ancestor",
+    "replicate": 1,
+    "radius_um": 16.7472384
+  },
+  {
+    "treatment": "ancestor",
+    "replicate": 2,
+    "radius_um": 20.2691423
+  },
+  {
+    "treatment": "obligately_aerobic",
+    "replicate": 1,
+    "radius_um": 33.8199024
+  },
+  {
+    "treatment": "obligately_aerobic",
+    "replicate": 2,
+    "radius_um": 28.0495133
+  },
+  {
+    "treatment": "obligately_aerobic",
+    "replicate": 3,
+    "radius_um": 29.6497239
+  },
+  {
+    "treatment": "obligately_aerobic",
+    "replicate": 4,
+    "radius_um": 47.8841394
+  },
+  {
+    "treatment": "obligately_aerobic",
+    "replicate": 5,
+    "radius_um": 36.8916888
+  },
+  {
+    "treatment": "mixotrophic",
+    "replicate": 1,
+    "radius_um": 35.1084994
+  },
+  {
+    "treatment": "mixotrophic",
+    "replicate": 2,
+    "radius_um": 37.4789545
+  },
+  {
+    "treatment": "mixotrophic",
+    "replicate": 3,
+    "radius_um": 34.2267622
+  },
+  {
+    "treatment": "mixotrophic",
+    "replicate": 4,
+    "radius_um": 40.1834607
+  },
+  {
+    "treatment": "mixotrophic",
+    "replicate": 5,
+    "radius_um": 38.362605
+  },
+  {
+    "treatment": "anaerobic",
+    "replicate": 1,
+    "radius_um": 433.224425
+  },
+  {
+    "treatment": "anaerobic",
+    "replicate": 2,
+    "radius_um": 579.760245
+  },
+  {
+    "treatment": "anaerobic",
+    "replicate": 3,
+    "radius_um": 288.731822
+  },
+  {
+    "treatment": "anaerobic",
+    "replicate": 4,
+    "radius_um": 411.793593
+  },
+  {
+    "treatment": "anaerobic",
+    "replicate": 5,
+    "radius_um": 456.803192
+  }
+]
