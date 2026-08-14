@@ -82,7 +82,8 @@
           <h2>Replay a lineage</h2>
           <p>
             Time and cell shape follow the published population means. The animated arrangement
-            explains how geometry can change packing; it does not recreate measured clusters.
+            explains how elongation can relieve packing strain and how entangled branches can
+            remain connected after a bond breaks. It does not recreate measured cluster images.
           </p>
         </div>
 
@@ -93,16 +94,35 @@
               <option>PA1</option><option>PA2</option><option>PA3</option><option>PA4</option><option>PA5</option>
             </select>
 
+            <div class="lineage-picker" role="group" aria-label="Quick lineage selection">
+              <button type="button" data-population="PA1" aria-pressed="true"><i></i>PA1</button>
+              <button type="button" data-population="PA2" aria-pressed="false"><i></i>PA2</button>
+              <button type="button" data-population="PA3" aria-pressed="false"><i></i>PA3</button>
+              <button type="button" data-population="PA4" aria-pressed="false"><i></i>PA4</button>
+              <button type="button" data-population="PA5" aria-pressed="false"><i></i>PA5</button>
+            </div>
+
             <div class="range-label">
               <label for="day">Transfer</label><output id="day-output" for="day">0</output>
             </div>
-            <input id="day" type="range" min="0" max="600" step="50" value="0" />
+            <input id="day" type="range" min="0" max="600" step="1" value="0" />
+            <p id="measurement-status" class="measurement-status">Published measurement</p>
             <button id="play" class="button compact" type="button" aria-pressed="false">Play evolution</button>
+
+            <fieldset class="view-controls">
+              <legend>Mechanism view</legend>
+              <div role="group" aria-label="Mechanism view">
+                <button class="view-choice active" type="button" data-view="colony" aria-pressed="true">Colony</button>
+                <button class="view-choice" type="button" data-view="packing" aria-pressed="false">Packing</button>
+                <button class="view-choice" type="button" data-view="fracture" aria-pressed="false">Fracture</button>
+              </div>
+            </fieldset>
 
             <div class="readout" aria-live="polite">
               <div><span>Mean aspect ratio</span><strong id="aspect-value">1.25</strong></div>
               <div><span>Mean radius</span><strong id="radius-value">16.75 µm</strong></div>
               <div><span>Relative radius</span><strong id="relative-value">1.0×</strong></div>
+              <div><span>Modelled packing relief</span><strong id="packing-value">0%</strong></div>
             </div>
           </div>
 
@@ -110,14 +130,34 @@
             <svg id="cluster-model" viewBox="0 0 800 620" role="img" aria-labelledby="cluster-title cluster-desc">
               <title id="cluster-title">Explanatory snowflake yeast geometry</title>
               <desc id="cluster-desc">A branching cell cluster changes with the selected published time point.</desc>
+              <g id="model-field"></g>
               <g id="model-branches"></g>
+              <g id="model-breaks"></g>
+              <g id="model-entanglements"></g>
               <g id="model-cells"></g>
             </svg>
             <div class="chamber-key">
-              <span><i class="key-cell"></i> clonal cells</span>
-              <span><i class="key-link"></i> persistent bonds</span>
+              <span><i class="key-cell"></i> modelled cells</span>
+              <span><i class="key-link"></i> parent–daughter bonds</span>
+              <span><i class="key-entangle"></i> retained contact</span>
+              <span><i class="key-break"></i> modelled fracture</span>
+            </div>
+            <div class="evidence-key" aria-label="Evidence status">
+              <p><strong>Measured</strong> mean cell aspect ratio · mean cluster radius</p>
+              <p><strong>Modelled</strong> branch topology · contacts · fractures · packing cue</p>
             </div>
           </div>
+        </div>
+        <div class="model-note">
+          <div>
+            <p class="eyebrow">What the model is doing</p>
+            <p id="model-explanation">A fixed PA1 seed generates one repeatable illustrative topology. The published means determine its scale and cell elongation.</p>
+          </div>
+          <p>
+            The mechanism views operationalize the paper’s proposed sequence—elongation reduces
+            packing strain; later branch entanglement can preserve cluster integrity after cellular
+            bonds fail. Their scores are explanatory cues, not additional observations.
+          </p>
         </div>
       </section>
 
@@ -209,7 +249,7 @@
     </main>
 
     <footer>
-      <p>Snowflake Evolution Lab · Product v0.1.0 · Study v0.1</p>
+      <p>Snowflake Evolution Lab · Product v0.1.1 · Study v0.1</p>
       <p>Original software MIT licensed. Upstream data retain their original attribution and terms.</p>
     </footer>
   </body>

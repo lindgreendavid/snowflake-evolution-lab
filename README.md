@@ -16,9 +16,12 @@ median 0.956), but the coarse trajectories do not identify a universal causal th
 ## Interactive experience
 
 Replay each published trajectory from transfer 0 to 600, compare cluster radius with aspect ratio,
-and inspect the day-600 metabolic-treatment contrast. The animated cell cluster is an explanatory
-geometry model. It is visibly separated from the empirical charts and is not microscopy or a
-forward evolutionary simulation.
+inspect the day-600 metabolic-treatment contrast, and switch between colony, packing, and fracture
+views. Published mean radius and cell aspect ratio drive the animation. Five fixed seeds give the
+replicates visually distinct but reproducible topologies; branch contacts, fractures, and the
+packing-relief cue are explicitly modelled rather than measured. The model is not microscopy or a
+forward evolutionary simulation. Its complete mapping is documented in the
+[animation model specification](docs/animation-model-v0.1.md).
 
 ## Evidence
 
