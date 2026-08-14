@@ -17,6 +17,15 @@ helps; it is not sufficient for the later macroscopic phenotype.
 The historical frozen v0.1 analysis remains unchanged: cell aspect ratio and cluster radius were
 positively associated within all five anaerobic lineages (Spearman ρ 0.923–0.967; median 0.956).
 
+## What this contributes
+
+This project contributes a source-compatible reanalysis that separates an immediate engineered
+genome-duplication effect from a longitudinal sufficiency test, while preserving the earlier
+morphology study unchanged. Its interactive model makes permanent parent–daughter junctions,
+steric contact, and modelled fracture visibly distinct from measured quantities. It does **not**
+identify a quantitative entanglement threshold, recreate microscopy, or provide an independent
+wet-lab replication.
+
 ## Interactive experience
 
 Replay the original transfer 0–600 morphology trajectories, then open the v1 genome explorer to
