@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "study_version": "0.1",
+  "article": {
+    "citation": "Bozdag et al. De novo evolution of macroscopic multicellularity. Nature 617, 747-754 (2023).",
+    "doi": "10.1038/s41586-023-06052-1",
+    "url": "https://www.nature.com/articles/s41586-023-06052-1"
+  },
+  "source_repository": {
+    "url": "https://github.com/ozanbozdag/De_novo_evolution_of_macroscopic_multicellularity",
+    "commit": "f65f8fa5f987b0979a83084b4348e153599bef79"
+  },
+  "workbooks": [
+    {
+      "name": "01_Source_data.xlsx",
+      "sha256": "24827c20073969a7b6a0eaefb8540dbb874b3f8637d49ebd38ed75b5b92cfe80",
+      "sheets": ["Fig1b", "Fig1e", "Fig2d"]
+    }
+  ],
+  "retrieved_on": "2026-08-14",
+  "committed_data_policy": "Only attributed figure-source values required by the frozen analysis are committed as CSV. The upstream workbook remains canonical."
+}

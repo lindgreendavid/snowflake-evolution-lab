@@ -1,0 +1,12 @@
+.coverage
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+__pycache__/
+*.egg-info/
+dist/
+build/
+01_Source_data.xlsx
+Raw_data.xlsx
+PA1-5_VCF_files.zip
