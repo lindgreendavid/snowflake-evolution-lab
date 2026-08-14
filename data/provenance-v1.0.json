@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "study_version": "1.0",
+  "article": {
+    "title": "Genome duplication in a long-term multicellularity evolution experiment",
+    "doi": "10.1038/s41586-025-08689-6",
+    "journal": "Nature",
+    "year": 2025
+  },
+  "repository": "https://github.com/ktong25/WGD_in_MuLTEE",
+  "commit": "aa090bbd9163dda490a5ede716bdd063270e9cd6",
+  "source_files": [
+    {
+      "path": "data/source_data/Fig1cde_evo.csv",
+      "sha256": "327c244532d9f9b93af23429030309d025c4fcab245bc51cb4bd3efc0a7c21ba"
+    },
+    {
+      "path": "data/source_data/Fig1cde_ploidy_Fig3f.csv",
+      "sha256": "f130418f7fb5f557150ecb771a2bee2fce2f4bd6289ca7791aa882ddddc0bc3c"
+    },
+    {
+      "path": "data/source_data/Fig2b.csv",
+      "sha256": "b03b9778320ad828200ef1ffb8055af2b6b2de30fcec458f4543392b2a3d247d"
+    },
+    {
+      "path": "data/source_data/Fig2d.csv",
+      "sha256": "237aefa195c0f1c1ec8f9dbd7184b1c7bb60e04f1f772ededafa570d1e352607"
+    },
+    {
+      "path": "data/source_data/Fig3bcf_raw_EDFig5de.csv",
+      "sha256": "f8b8f8878a31eb80632a87a0ea1f79cb56b3f6234cb10439ffeca46a64ccc77f"
+    },
+    {
+      "path": "data/source_data/Fig3e_raw_EDFig5bc.csv",
+      "sha256": "8af232fd486620736080da2806153d6f9e1b92d60666afddcf18193a4d7594cc"
+    }
+  ],
+  "licensing_boundary": "Upstream data retain their original attribution and terms. This repository publishes compact derived summaries and does not relicense the source files."
+}
