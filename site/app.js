@@ -1,6 +1,11 @@
 "use strict";
 
-const state = { trajectories: [], treatments: [], results: null, measure: "radius_um", animationFrame: null, animationStarted: 0, animationFrom: 0, view: "colony" };
+const state = {
+  trajectories: [], treatments: [], results: null, measure: "radius_um",
+  animationFrame: null, animationStarted: 0, animationFrom: 0, view: "colony",
+  engineered: [], longitudinal: [], chromosomes: [], resultsV1: null,
+  genomeCondition: "PA", genomeDay: 200,
+};
 const colors = { PA1: "#55a889", PA2: "#e78769", PA3: "#e4bd59", PA4: "#7795cf", PA5: "#aa78b2" };
 const profiles = {
   PA1: { seed: 1103, arms: 6, split: .20, turn: .018, jitter: .23, name: "open radial seed" },
@@ -223,12 +228,118 @@ function drawTreatments() {
     const summary = document.createElement("strong"); summary.textContent = `${(values.reduce((a, b) => a + b, 0) / values.length).toFixed(1)} µm`; row.append(label, track, summary); plot.append(row);
   });
 }
+
+function comparison(condition, outcome) {
+  return state.resultsV1.engineered_intervention.comparisons.find(
+    (row) => row.condition === condition && row.outcome === outcome,
+  );
+}
+
+function drawIntervention() {
+  const condition = state.genomeCondition;
+  const outcomes = [
+    ["weighted_mean_radius_um_24h", "#effect-radius", "#effect-radius-detail", "µm"],
+    ["mean_cell_volume_um3", "#effect-volume", "#effect-volume-detail", "µm³"],
+    ["mean_aspect_ratio", "#effect-aspect", "#effect-aspect-detail", ""],
+  ];
+  document.querySelector("#intervention-title").textContent = `${condition}: immediate 2N → 4N effect`;
+  outcomes.forEach(([outcome, valueSelector, detailSelector, unit]) => {
+    const result = comparison(condition, outcome);
+    const digits = outcome === "mean_aspect_ratio" ? 3 : 1;
+    document.querySelector(valueSelector).textContent = `+${result.difference_4n_minus_2n.toFixed(digits)} ${unit}`.trim();
+    document.querySelector(detailSelector).textContent = `${result.mean_2n.toFixed(digits)} → ${result.mean_4n.toFixed(digits)} ${unit}`.trim();
+  });
+  const primary = comparison(condition, "weighted_mean_radius_um_24h");
+  document.querySelector("#intervention-inference").textContent =
+    `Exact one-sided permutation p = ${primary.exact_one_sided_permutation_probability.toFixed(4)}; ` +
+    `Holm-adjusted p = ${primary.holm_adjusted_probability.toFixed(4)}. Biological inference unit: replicate strain (n = 4 per group).`;
+}
+
+function copyColor(copy) {
+  if (copy === 4) return "#f3de93";
+  if (copy < 4) return "#7eb3c4";
+  return "#e78769";
+}
+
+function drawGenome() {
+  const line = document.querySelector("#genome-line").value;
+  const condition = state.genomeCondition;
+  const day = state.genomeDay;
+  const observation = state.longitudinal.find(
+    (row) => row.condition === condition && row.line === line && row.day === day,
+  );
+  const copies = state.chromosomes.filter(
+    (row) => row.condition === condition && row.line === line && row.day === day,
+  );
+  const burden = state.resultsV1.aneuploidy_burdens.find(
+    (row) => row.condition === condition && row.line === line && row.day === day,
+  );
+  document.querySelector("#genome-title").textContent = `${condition}${line} · transfer ${day.toLocaleString()}`;
+  document.querySelector("#genome-ploidy").textContent = `${observation.g1_peak_n.toFixed(3)}N`;
+  document.querySelector("#genome-radius").textContent = `${observation.weighted_mean_radius_um.toFixed(1)} µm`;
+  document.querySelector("#genome-aspect").textContent = observation.mean_aspect_ratio.toFixed(3);
+  document.querySelector("#genome-burden").textContent = `${burden.aneuploidy_burden} copy-step${burden.aneuploidy_burden === 1 ? "" : "s"}`;
+  const grid = document.querySelector("#chromosome-grid");
+  grid.replaceChildren();
+  copies.forEach((row) => {
+    const item = document.createElement("div");
+    item.className = "chromosome";
+    const bar = document.createElement("div");
+    bar.className = "chromosome-bar";
+    bar.dataset.copy = row.copy_number;
+    bar.style.height = `${Math.max(12, row.copy_number * 28)}px`;
+    bar.style.setProperty("--copy-color", copyColor(row.copy_number));
+    bar.title = `Chromosome ${row.chromosome}: ${row.copy_number} copies`;
+    const label = document.createElement("span");
+    label.className = "chromosome-label";
+    label.textContent = row.chromosome;
+    item.append(bar, label);
+    grid.append(item);
+  });
+  grid.setAttribute(
+    "aria-label",
+    `${condition}${line} at transfer ${day}: ${copies.map((row) => `${row.chromosome} ${row.copy_number}`).join(", ")}`,
+  );
+  drawIntervention();
+}
+
+function drawSufficiency() {
+  const summaries = state.resultsV1.longitudinal_sufficiency.treatment_summaries;
+  const timeline = document.querySelector("#sufficiency-timeline");
+  timeline.replaceChildren();
+  const key = document.createElement("div");
+  key.className = "timeline-key";
+  key.innerHTML = "<span><i></i>PA mean</span><span><i class=\"pm\"></i>PM mean</span>";
+  timeline.append(key);
+  [600, 1000].forEach((day) => {
+    const summary = summaries[String(day)];
+    const row = document.createElement("div");
+    row.className = "timeline-row";
+    const label = document.createElement("span"); label.textContent = `t${day}`;
+    const track = document.createElement("div"); track.className = "timeline-track";
+    const pa = document.createElement("i"); pa.className = "timeline-bar"; pa.style.width = `${(summary.mean_pa_radius_um / 450) * 100}%`;
+    const pm = document.createElement("i"); pm.className = "timeline-bar pm"; pm.style.width = `${(summary.mean_pm_radius_um / 450) * 100}%`;
+    track.append(pa, pm);
+    const ratio = document.createElement("strong"); ratio.textContent = `${summary.pa_over_pm_ratio.toFixed(2)}×`;
+    row.append(label, track, ratio); timeline.append(row);
+  });
+}
+
 async function init() {
   drawHero();
   try {
-    const [trajectories, treatments, results] = await Promise.all([fetch("data/trajectories-v0.1.json").then((response) => response.json()), fetch("data/treatments-v0.1.json").then((response) => response.json()), fetch("data/results-v0.1.json").then((response) => response.json())]);
+    const [trajectories, treatments, results, engineered, longitudinal, chromosomes, resultsV1] = await Promise.all([
+      fetch("data/trajectories-v0.1.json").then((response) => response.json()),
+      fetch("data/treatments-v0.1.json").then((response) => response.json()),
+      fetch("data/results-v0.1.json").then((response) => response.json()),
+      fetch("data/engineered-v1.0.json").then((response) => response.json()),
+      fetch("data/longitudinal-v1.0.json").then((response) => response.json()),
+      fetch("data/chromosome-copy-v1.0.json").then((response) => response.json()),
+      fetch("data/results-v1.0.json").then((response) => response.json()),
+    ]);
     state.trajectories = trajectories; state.treatments = treatments; state.results = results;
-    document.querySelector('[data-result="median"]').textContent = results.confirmatory.median_spearman_rho.toFixed(3); updateChamber(); drawChart(); drawTreatments();
+    state.engineered = engineered; state.longitudinal = longitudinal; state.chromosomes = chromosomes; state.resultsV1 = resultsV1;
+    document.querySelector('[data-result="median"]').textContent = results.confirmatory.median_spearman_rho.toFixed(3); updateChamber(); drawChart(); drawTreatments(); drawGenome(); drawSufficiency();
   } catch (error) { document.querySelector("#experiment").insertAdjacentHTML("afterbegin", '<p role="alert">Interactive data could not be loaded. The source links and research report remain available.</p>'); }
 }
 
@@ -238,4 +349,15 @@ document.querySelector("#day").addEventListener("input", () => { stopPlayback();
 document.querySelector("#play").addEventListener("click", togglePlay);
 document.querySelectorAll(".view-choice").forEach((button) => button.addEventListener("click", () => { state.view = button.dataset.view; document.querySelectorAll(".view-choice").forEach((item) => { const active = item === button; item.classList.toggle("active", active); item.setAttribute("aria-pressed", String(active)); }); updateChamber(); }));
 document.querySelectorAll(".chart-choice").forEach((button) => button.addEventListener("click", () => { state.measure = button.dataset.measure; document.querySelectorAll(".chart-choice").forEach((item) => item.classList.toggle("active", item === button)); drawChart(); }));
+document.querySelectorAll("[data-genome-condition]").forEach((button) => button.addEventListener("click", () => {
+  state.genomeCondition = button.dataset.genomeCondition;
+  document.querySelectorAll("[data-genome-condition]").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+  drawGenome();
+}));
+document.querySelectorAll("[data-genome-day]").forEach((button) => button.addEventListener("click", () => {
+  state.genomeDay = Number(button.dataset.genomeDay);
+  document.querySelectorAll("[data-genome-day]").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+  drawGenome();
+}));
+document.querySelector("#genome-line").addEventListener("change", drawGenome);
 init();

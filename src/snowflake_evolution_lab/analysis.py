@@ -156,6 +156,7 @@ def analyze(rows: list[Observation]) -> dict[str, Any]:
     exact_tail = sum(math.comb(5, k) for k in range(positive, 6)) / (2**5)
     return {
         "schema_version": "1.0.0",
+        # Historical v0.1 analysis artifacts remain frozen at their release version.
         "product_version": "0.1.1",
         "study_version": "0.1",
         "question": (

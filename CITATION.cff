@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it and the primary MuLTEE paper."
 title: "Snowflake Evolution Lab"
 type: software
-version: 0.1.1
+version: 1.0.0
 date-released: 2026-08-14
 authors:
   - family-names: Lindgreen

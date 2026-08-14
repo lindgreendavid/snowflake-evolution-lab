@@ -1,0 +1,4706 @@
+[
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "III",
+    "copy_number": 7
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "IX",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "VIII",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "III",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "IX",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "VIII",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XIV",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "III",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "IX",
+    "copy_number": 7
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "VIII",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XIV",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "II",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "VI",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "II",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "III",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "IX",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "VIII",
+    "copy_number": 7
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XV",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "II",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "III",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "IX",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "VIII",
+    "copy_number": 7
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XV",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "III",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XII",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "II",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "III",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "VI",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "II",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "III",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "VIII",
+    "copy_number": 7
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XII",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "III",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "II",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "III",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XI",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XIV",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "II",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "III",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "IX",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "VII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "VIII",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "X",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XI",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XIV",
+    "copy_number": 8
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "II",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "III",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "IX",
+    "copy_number": 6
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "VII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "X",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XI",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XIV",
+    "copy_number": 8
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XV",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "II",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "IX",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "V",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XII",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XIII",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XIV",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XVI",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "I",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "III",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "IX",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XII",
+    "copy_number": 3
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XIV",
+    "copy_number": 5
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "I",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "II",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "III",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "IV",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "IX",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "V",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "VI",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "VII",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "VIII",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "X",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XI",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XII",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XIII",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XIV",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XV",
+    "copy_number": 2
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XVI",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "I",
+    "copy_number": 5
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "III",
+    "copy_number": 5
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "I",
+    "copy_number": 5
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "I",
+    "copy_number": 5
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "III",
+    "copy_number": 5
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "VI",
+    "copy_number": 5
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "III",
+    "copy_number": 5
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "VIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "I",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "II",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "III",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "IV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "IX",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "V",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "VI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "VII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "VIII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "X",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XII",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XIII",
+    "copy_number": 5
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XIV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XV",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "chromosome": "XVI",
+    "copy_number": 4
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "I",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "II",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "III",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "IV",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "IX",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "V",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "VI",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "VII",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "VIII",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "X",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XI",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XII",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XIII",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XIV",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XV",
+    "copy_number": 2
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "chromosome": "XVI",
+    "copy_number": 2
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 200,
+    "weighted_mean_radius_um": 43.8395411589486,
+    "mean_cell_volume_um3": 147.226149656349,
+    "mean_aspect_ratio": 1.53988322717622,
+    "g1_peak_n": 3.96243248550983
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 400,
+    "weighted_mean_radius_um": 68.7222803804175,
+    "mean_cell_volume_um3": 157.476369733431,
+    "mean_aspect_ratio": 1.878286,
+    "g1_peak_n": 3.98716020080494
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 600,
+    "weighted_mean_radius_um": 476.643147237832,
+    "mean_cell_volume_um3": 162.365542093665,
+    "mean_aspect_ratio": 2.10740128068303,
+    "g1_peak_n": 4.02928688609132
+  },
+  {
+    "condition": "PA",
+    "line": "1",
+    "day": 1000,
+    "weighted_mean_radius_um": 412.442658172987,
+    "mean_cell_volume_um3": 171.42560082555,
+    "mean_aspect_ratio": 2.0908622327791,
+    "g1_peak_n": 4.11231076542088
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 200,
+    "weighted_mean_radius_um": 40.2068460488771,
+    "mean_cell_volume_um3": 136.204238620236,
+    "mean_aspect_ratio": 1.34947067137809,
+    "g1_peak_n": 3.94551044184948
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 400,
+    "weighted_mean_radius_um": 44.1309298086683,
+    "mean_cell_volume_um3": 119.846839312871,
+    "mean_aspect_ratio": 1.45586022131625,
+    "g1_peak_n": 3.7538207719428
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 600,
+    "weighted_mean_radius_um": 356.306765581963,
+    "mean_cell_volume_um3": 187.346845101675,
+    "mean_aspect_ratio": 2.42387380191693,
+    "g1_peak_n": 3.950631
+  },
+  {
+    "condition": "PA",
+    "line": "2",
+    "day": 1000,
+    "weighted_mean_radius_um": 348.654219302386,
+    "mean_cell_volume_um3": 170.473562609219,
+    "mean_aspect_ratio": 2.44875037593985,
+    "g1_peak_n": 4.7448181
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 200,
+    "weighted_mean_radius_um": 46.581614978941,
+    "mean_cell_volume_um3": 151.823370420013,
+    "mean_aspect_ratio": 1.547490785645,
+    "g1_peak_n": 3.9119356048027
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 400,
+    "weighted_mean_radius_um": 58.8306687498677,
+    "mean_cell_volume_um3": 173.063798932684,
+    "mean_aspect_ratio": 1.73108907138345,
+    "g1_peak_n": 3.83405852258456
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 600,
+    "weighted_mean_radius_um": 95.7334641486717,
+    "mean_cell_volume_um3": 154.614716154194,
+    "mean_aspect_ratio": 1.9731853188929,
+    "g1_peak_n": 3.89755384173598
+  },
+  {
+    "condition": "PA",
+    "line": "3",
+    "day": 1000,
+    "weighted_mean_radius_um": 448.6379636827,
+    "mean_cell_volume_um3": 162.876987264234,
+    "mean_aspect_ratio": 2.92843295638126,
+    "g1_peak_n": 4.05121720517443
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 200,
+    "weighted_mean_radius_um": 42.2740912274676,
+    "mean_cell_volume_um3": 138.115690526974,
+    "mean_aspect_ratio": 1.50231447688564,
+    "g1_peak_n": 3.93431350665105
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 400,
+    "weighted_mean_radius_um": 56.7609083145994,
+    "mean_cell_volume_um3": 167.767185641825,
+    "mean_aspect_ratio": 1.73566446402349,
+    "g1_peak_n": 4.28084499728539
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 600,
+    "weighted_mean_radius_um": 342.443072417511,
+    "mean_cell_volume_um3": 205.31095057043,
+    "mean_aspect_ratio": 2.11464107883817,
+    "g1_peak_n": 4.43574278650055
+  },
+  {
+    "condition": "PA",
+    "line": "4",
+    "day": 1000,
+    "weighted_mean_radius_um": 319.648938805016,
+    "mean_cell_volume_um3": 186.422353588497,
+    "mean_aspect_ratio": 2.11596214511041,
+    "g1_peak_n": 4.34904235127588
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 200,
+    "weighted_mean_radius_um": 39.773354793108,
+    "mean_cell_volume_um3": 139.62400828617,
+    "mean_aspect_ratio": 1.39086999419617,
+    "g1_peak_n": 4.09072084675546
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 400,
+    "weighted_mean_radius_um": 67.5312192670695,
+    "mean_cell_volume_um3": 183.618164119884,
+    "mean_aspect_ratio": 1.8610136402387,
+    "g1_peak_n": 4.29150042205792
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 600,
+    "weighted_mean_radius_um": 293.626369912039,
+    "mean_cell_volume_um3": 153.102880890119,
+    "mean_aspect_ratio": 2.90585494880546,
+    "g1_peak_n": 3.68259787103373
+  },
+  {
+    "condition": "PA",
+    "line": "5",
+    "day": 1000,
+    "weighted_mean_radius_um": 470.987793928912,
+    "mean_cell_volume_um3": 164.046875263143,
+    "mean_aspect_ratio": 2.22706512301013,
+    "g1_peak_n": 4.14320484133004
+  },
+  {
+    "condition": "PA",
+    "line": "ancestor",
+    "day": 0,
+    "weighted_mean_radius_um": 18.8269208645938,
+    "mean_cell_volume_um3": 61.5300933612022,
+    "mean_aspect_ratio": 1.24285132275132,
+    "g1_peak_n": 1.89791615722611
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 200,
+    "weighted_mean_radius_um": 39.3337176799085,
+    "mean_cell_volume_um3": 150.780630406759,
+    "mean_aspect_ratio": 1.38329639591178,
+    "g1_peak_n": 3.94924481246471
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 400,
+    "weighted_mean_radius_um": 41.1848263621419,
+    "mean_cell_volume_um3": 147.145069209432,
+    "mean_aspect_ratio": 1.39576281112738,
+    "g1_peak_n": 3.88211380335408
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 600,
+    "weighted_mean_radius_um": 41.4549177172929,
+    "mean_cell_volume_um3": 143.270183197256,
+    "mean_aspect_ratio": 1.42242789223455,
+    "g1_peak_n": 3.63473649639732
+  },
+  {
+    "condition": "PM",
+    "line": "1",
+    "day": 1000,
+    "weighted_mean_radius_um": 44.8695401593031,
+    "mean_cell_volume_um3": 153.513326459081,
+    "mean_aspect_ratio": 1.50573211219233,
+    "g1_peak_n": 3.97805832267411
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 200,
+    "weighted_mean_radius_um": 39.5158711968702,
+    "mean_cell_volume_um3": 148.061051657816,
+    "mean_aspect_ratio": 1.38746265938069,
+    "g1_peak_n": 4.05851540939962
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 400,
+    "weighted_mean_radius_um": 39.9001800929121,
+    "mean_cell_volume_um3": 145.717712517675,
+    "mean_aspect_ratio": 1.41363609172483,
+    "g1_peak_n": 3.6991990261286
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 600,
+    "weighted_mean_radius_um": 41.5077137965394,
+    "mean_cell_volume_um3": 145.975541703836,
+    "mean_aspect_ratio": 1.44725278396437,
+    "g1_peak_n": 3.6825252480985
+  },
+  {
+    "condition": "PM",
+    "line": "2",
+    "day": 1000,
+    "weighted_mean_radius_um": 39.1417572458651,
+    "mean_cell_volume_um3": 132.631419413472,
+    "mean_aspect_ratio": 1.36329007177033,
+    "g1_peak_n": 3.82282761496048
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 200,
+    "weighted_mean_radius_um": 39.909643230513,
+    "mean_cell_volume_um3": 169.264105538857,
+    "mean_aspect_ratio": 1.38987432117921,
+    "g1_peak_n": 3.76697720089458
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 400,
+    "weighted_mean_radius_um": 61.2383202469298,
+    "mean_cell_volume_um3": 139.632708742503,
+    "mean_aspect_ratio": 1.50670822454308,
+    "g1_peak_n": 3.87726305269107
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 600,
+    "weighted_mean_radius_um": 38.7067716070156,
+    "mean_cell_volume_um3": 151.461816239603,
+    "mean_aspect_ratio": 1.39813807531381,
+    "g1_peak_n": 3.97039082421937
+  },
+  {
+    "condition": "PM",
+    "line": "3",
+    "day": 1000,
+    "weighted_mean_radius_um": 37.6543796210835,
+    "mean_cell_volume_um3": 154.275134896941,
+    "mean_aspect_ratio": 1.37932242712671,
+    "g1_peak_n": 3.71832438216072
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 200,
+    "weighted_mean_radius_um": 44.6644865787064,
+    "mean_cell_volume_um3": 153.067668088054,
+    "mean_aspect_ratio": 1.37738081671415,
+    "g1_peak_n": 3.88921830498922
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 400,
+    "weighted_mean_radius_um": 45.6675764056429,
+    "mean_cell_volume_um3": 141.20659381915,
+    "mean_aspect_ratio": 1.38158255227109,
+    "g1_peak_n": 3.90836331629416
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 600,
+    "weighted_mean_radius_um": 45.222758225131,
+    "mean_cell_volume_um3": 145.798815764889,
+    "mean_aspect_ratio": 1.4027782497876,
+    "g1_peak_n": 3.65215390769536
+  },
+  {
+    "condition": "PM",
+    "line": "4",
+    "day": 1000,
+    "weighted_mean_radius_um": 50.9088707516235,
+    "mean_cell_volume_um3": 141.175964189308,
+    "mean_aspect_ratio": 1.43297067171239,
+    "g1_peak_n": 3.48887733845807
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 200,
+    "weighted_mean_radius_um": 41.210552999838,
+    "mean_cell_volume_um3": 144.077396302339,
+    "mean_aspect_ratio": 1.43195534883721,
+    "g1_peak_n": 4.03367066344943
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 400,
+    "weighted_mean_radius_um": 47.3563846181676,
+    "mean_cell_volume_um3": 158.386946395397,
+    "mean_aspect_ratio": 1.38556268011527,
+    "g1_peak_n": 3.84159258140058
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 600,
+    "weighted_mean_radius_um": 67.7262028531605,
+    "mean_cell_volume_um3": 159.356598569881,
+    "mean_aspect_ratio": 1.59633671742809,
+    "g1_peak_n": 3.84667382674567
+  },
+  {
+    "condition": "PM",
+    "line": "5",
+    "day": 1000,
+    "weighted_mean_radius_um": 53.2256678637685,
+    "mean_cell_volume_um3": 155.8162600808,
+    "mean_aspect_ratio": 1.44535003796507,
+    "g1_peak_n": 3.61574067695647
+  },
+  {
+    "condition": "PM",
+    "line": "ancestor",
+    "day": 0,
+    "weighted_mean_radius_um": 24.7751285066609,
+    "mean_cell_volume_um3": 80.8685287705666,
+    "mean_aspect_ratio": 1.26009162098669,
+    "g1_peak_n": 2.03837809210332
+  }
+]

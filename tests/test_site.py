@@ -18,6 +18,11 @@ def test_site_has_accessible_research_structure() -> None:
     assert "Modelled</strong> branch topology" in html
     assert 'data-view="packing"' in html
     assert 'data-view="fracture"' in html
+    assert 'id="genome"' in html
+    assert 'id="chromosome-grid"' in html
+    assert 'data-genome-day="1000"' in html
+    assert "Genome duplication helps. It is not enough." in html
+    assert "Not measured here:" in html
 
 
 def test_animation_keeps_empirical_and_modelled_quantities_separate() -> None:
@@ -39,6 +44,30 @@ def test_site_data_matches_report_and_has_missing_value() -> None:
     assert report == site_report
     assert len(trajectories) == 65
     assert sum(row["radius_um"] is None for row in trajectories) == 1
+
+
+def test_v1_site_data_matches_report_and_exposes_longitudinal_evidence() -> None:
+    report = json.loads((ROOT / "reports" / "results-v1.0.json").read_text(encoding="utf-8"))
+    site_report = json.loads(
+        (ROOT / "site" / "data" / "results-v1.0.json").read_text(encoding="utf-8")
+    )
+    chromosomes = json.loads(
+        (ROOT / "site" / "data" / "chromosome-copy-v1.0.json").read_text(encoding="utf-8")
+    )
+    longitudinal = json.loads(
+        (ROOT / "site" / "data" / "longitudinal-v1.0.json").read_text(encoding="utf-8")
+    )
+    assert report == site_report
+    assert report["overall_gate_passed"] is True
+    assert len(chromosomes) == 672
+    assert len(longitudinal) == 42
+    assert {row["day"] for row in longitudinal if row["condition"] in {"PA", "PM"}} == {
+        0,
+        200,
+        400,
+        600,
+        1000,
+    }
 
 
 def test_css_has_responsive_and_reduced_motion_contracts() -> None:

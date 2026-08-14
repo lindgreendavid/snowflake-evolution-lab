@@ -1,0 +1,162 @@
+[
+  {
+    "condition": "PA",
+    "ploidy": "2N",
+    "replicate": "Rep1",
+    "cell_count": 3558,
+    "mean_cell_volume_um3": 59.160327912842,
+    "mean_aspect_ratio": 1.224656548623,
+    "cluster_count_24h": 856,
+    "weighted_mean_radius_um_24h": 19.844429037934
+  },
+  {
+    "condition": "PA",
+    "ploidy": "2N",
+    "replicate": "Rep2",
+    "cell_count": 2566,
+    "mean_cell_volume_um3": 65.233673980181,
+    "mean_aspect_ratio": 1.205433749026,
+    "cluster_count_24h": 845,
+    "weighted_mean_radius_um_24h": 20.162711656077
+  },
+  {
+    "condition": "PA",
+    "ploidy": "2N",
+    "replicate": "Rep3",
+    "cell_count": 1972,
+    "mean_cell_volume_um3": 65.769546752353,
+    "mean_aspect_ratio": 1.21200811359,
+    "cluster_count_24h": 874,
+    "weighted_mean_radius_um_24h": 20.354578932226
+  },
+  {
+    "condition": "PA",
+    "ploidy": "2N",
+    "replicate": "Rep4",
+    "cell_count": 2364,
+    "mean_cell_volume_um3": 58.652067043232,
+    "mean_aspect_ratio": 1.241310067682,
+    "cluster_count_24h": 674,
+    "weighted_mean_radius_um_24h": 20.266252434425
+  },
+  {
+    "condition": "PA",
+    "ploidy": "4N",
+    "replicate": "Rep1",
+    "cell_count": 1422,
+    "mean_cell_volume_um3": 137.532495972238,
+    "mean_aspect_ratio": 1.321610407876,
+    "cluster_count_24h": 1644,
+    "weighted_mean_radius_um_24h": 27.461585902557
+  },
+  {
+    "condition": "PA",
+    "ploidy": "4N",
+    "replicate": "Rep2",
+    "cell_count": 1647,
+    "mean_cell_volume_um3": 132.296462009497,
+    "mean_aspect_ratio": 1.329879781421,
+    "cluster_count_24h": 1616,
+    "weighted_mean_radius_um_24h": 27.768368124696
+  },
+  {
+    "condition": "PA",
+    "ploidy": "4N",
+    "replicate": "Rep3",
+    "cell_count": 1826,
+    "mean_cell_volume_um3": 126.88381723666,
+    "mean_aspect_ratio": 1.35911007667,
+    "cluster_count_24h": 1564,
+    "weighted_mean_radius_um_24h": 27.159794736749
+  },
+  {
+    "condition": "PA",
+    "ploidy": "4N",
+    "replicate": "Rep4",
+    "cell_count": 1996,
+    "mean_cell_volume_um3": 115.790870132475,
+    "mean_aspect_ratio": 1.340187374749,
+    "cluster_count_24h": 1544,
+    "weighted_mean_radius_um_24h": 26.804897764387
+  },
+  {
+    "condition": "PM",
+    "ploidy": "2N",
+    "replicate": "Rep1",
+    "cell_count": 1818,
+    "mean_cell_volume_um3": 77.978053139184,
+    "mean_aspect_ratio": 1.285898239824,
+    "cluster_count_24h": 868,
+    "weighted_mean_radius_um_24h": 25.901532763203
+  },
+  {
+    "condition": "PM",
+    "ploidy": "2N",
+    "replicate": "Rep2",
+    "cell_count": 3009,
+    "mean_cell_volume_um3": 78.242324177328,
+    "mean_aspect_ratio": 1.249594217348,
+    "cluster_count_24h": 1064,
+    "weighted_mean_radius_um_24h": 25.652145738923
+  },
+  {
+    "condition": "PM",
+    "ploidy": "2N",
+    "replicate": "Rep3",
+    "cell_count": 2295,
+    "mean_cell_volume_um3": 77.844575168604,
+    "mean_aspect_ratio": 1.257969934641,
+    "cluster_count_24h": 1156,
+    "weighted_mean_radius_um_24h": 25.995304544614
+  },
+  {
+    "condition": "PM",
+    "ploidy": "2N",
+    "replicate": "Rep4",
+    "cell_count": 3990,
+    "mean_cell_volume_um3": 72.805285804915,
+    "mean_aspect_ratio": 1.269726566416,
+    "cluster_count_24h": 955,
+    "weighted_mean_radius_um_24h": 26.012223579403
+  },
+  {
+    "condition": "PM",
+    "ploidy": "4N",
+    "replicate": "Rep1",
+    "cell_count": 2965,
+    "mean_cell_volume_um3": 156.863613046626,
+    "mean_aspect_ratio": 1.390336593592,
+    "cluster_count_24h": 929,
+    "weighted_mean_radius_um_24h": 42.919617242842
+  },
+  {
+    "condition": "PM",
+    "ploidy": "4N",
+    "replicate": "Rep2",
+    "cell_count": 2501,
+    "mean_cell_volume_um3": 149.415062189863,
+    "mean_aspect_ratio": 1.416914034386,
+    "cluster_count_24h": 980,
+    "weighted_mean_radius_um_24h": 41.657415644792
+  },
+  {
+    "condition": "PM",
+    "ploidy": "4N",
+    "replicate": "Rep3",
+    "cell_count": 2286,
+    "mean_cell_volume_um3": 153.518647815231,
+    "mean_aspect_ratio": 1.404570428696,
+    "cluster_count_24h": 925,
+    "weighted_mean_radius_um_24h": 42.148498355728
+  },
+  {
+    "condition": "PM",
+    "ploidy": "4N",
+    "replicate": "Rep4",
+    "cell_count": 3114,
+    "mean_cell_volume_um3": 151.681677340963,
+    "mean_aspect_ratio": 1.408375401413,
+    "cluster_count_24h": 733,
+    "weighted_mean_radius_um_24h": 44.864180355742
+  }
+]
