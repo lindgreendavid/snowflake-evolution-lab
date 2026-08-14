@@ -4,6 +4,25 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-08-14
+
+### Added
+
+- Frozen, source-compatible v1.0 protocol for the genome-duplication intervention and sufficiency
+  test.
+- Hash-verified import of the published cell, cluster, ploidy, phenotype, and chromosome tables.
+- Exact replicate-level permutation tests, deterministic bootstrap intervals, multiplicity
+  correction, and explicit evaluation gates.
+- Longitudinal comparison through transfer 1,000 and chromosome-copy explorer data.
+- Versioned research report and machine-readable v1.0 result.
+
+### Changed
+
+- Promoted the reproducible research product to stable v1.0.0 while preserving the historical
+  v0.1 study and its frozen artifacts unchanged.
+- Reframed the proposed coupled threshold as a future test because the selected public tables do
+  not contain a joined, quantitative time-resolved entanglement endpoint.
+
 ## [0.1.1] - 2026-08-14
 
 ### Changed

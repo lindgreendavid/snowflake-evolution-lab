@@ -1,0 +1,376 @@
+{
+  "schema_version": "1.0.0",
+  "product_version": "1.0.0",
+  "study_version": "1.0",
+  "question": "Does engineered tetraploidy increase snowflake-yeast phenotype, and is tetraploidy sufficient for macroscopic size?",
+  "engineered_intervention": {
+    "inference_unit": "engineered replicate strain",
+    "comparisons": [
+      {
+        "condition": "PA",
+        "outcome": "weighted_mean_radius_um_24h",
+        "replicates_per_group": 4,
+        "mean_2n": 20.156993015166,
+        "mean_4n": 27.298661632097,
+        "difference_4n_minus_2n": 7.141668616932,
+        "ratio_4n_over_2n": 1.354302281673,
+        "bootstrap_95_ci": [
+          6.751181928831,
+          7.537554652997
+        ],
+        "exact_one_sided_permutation_probability": 0.014285714286,
+        "holm_adjusted_probability": 0.028571428572
+      },
+      {
+        "condition": "PA",
+        "outcome": "mean_cell_volume_um3",
+        "replicates_per_group": 4,
+        "mean_2n": 62.203903922152,
+        "mean_4n": 128.125911337717,
+        "difference_4n_minus_2n": 65.922007415566,
+        "ratio_4n_over_2n": 2.059772831912,
+        "bootstrap_95_ci": [
+          57.220101642092,
+          74.146648776803
+        ],
+        "exact_one_sided_permutation_probability": 0.014285714286
+      },
+      {
+        "condition": "PA",
+        "outcome": "mean_aspect_ratio",
+        "replicates_per_group": 4,
+        "mean_2n": 1.22085211973,
+        "mean_4n": 1.337696910179,
+        "difference_4n_minus_2n": 0.116844790449,
+        "ratio_4n_over_2n": 1.095707570606,
+        "bootstrap_95_ci": [
+          0.09791558316,
+          0.136122094502
+        ],
+        "exact_one_sided_permutation_probability": 0.014285714286
+      },
+      {
+        "condition": "PM",
+        "outcome": "weighted_mean_radius_um_24h",
+        "replicates_per_group": 4,
+        "mean_2n": 25.890301656536,
+        "mean_4n": 42.897427899776,
+        "difference_4n_minus_2n": 17.00712624324,
+        "ratio_4n_over_2n": 1.656891776267,
+        "bootstrap_95_ci": [
+          15.975674367413,
+          18.318401144556
+        ],
+        "exact_one_sided_permutation_probability": 0.014285714286,
+        "holm_adjusted_probability": 0.028571428572
+      },
+      {
+        "condition": "PM",
+        "outcome": "mean_cell_volume_um3",
+        "replicates_per_group": 4,
+        "mean_2n": 76.717559572508,
+        "mean_4n": 152.869750098171,
+        "difference_4n_minus_2n": 76.152190525663,
+        "ratio_4n_over_2n": 1.992630513145,
+        "bootstrap_95_ci": [
+          72.930793218369,
+          79.766762691988
+        ],
+        "exact_one_sided_permutation_probability": 0.014285714286
+      },
+      {
+        "condition": "PM",
+        "outcome": "mean_aspect_ratio",
+        "replicates_per_group": 4,
+        "mean_2n": 1.265797239557,
+        "mean_4n": 1.405049114522,
+        "difference_4n_minus_2n": 0.139251874964,
+        "ratio_4n_over_2n": 1.11001120133,
+        "bootstrap_95_ci": [
+          0.122242549871,
+          0.154972240782
+        ],
+        "exact_one_sided_permutation_probability": 0.014285714286
+      }
+    ],
+    "primary_criterion_passed": true
+  },
+  "longitudinal_sufficiency": {
+    "evolved_line_time_observations": 40,
+    "minimum_evolved_g1_peak_n": 3.488877338458,
+    "treatment_summaries": {
+      "600": {
+        "mean_pa_radius_um": 312.950563859603,
+        "mean_pm_radius_um": 46.923672839828,
+        "pa_over_pm_ratio": 6.669353546297,
+        "maximum_pm_radius_um": 67.726202853161,
+        "pa_lines_above_300_um": 3
+      },
+      "1000": {
+        "mean_pa_radius_um": 400.0743147784,
+        "mean_pm_radius_um": 45.160043128329,
+        "pa_over_pm_ratio": 8.859033053656,
+        "maximum_pm_radius_um": 53.225667863768,
+        "pa_lines_above_300_um": 5
+      }
+    },
+    "criterion_passed": true,
+    "conclusion": "Tetraploidy is not sufficient for macroscopic size across the two metabolic treatments."
+  },
+  "aneuploidy_burdens": [
+    {
+      "condition": "PA",
+      "line": "1",
+      "day": 200,
+      "aneuploidy_burden": 5
+    },
+    {
+      "condition": "PA",
+      "line": "1",
+      "day": 400,
+      "aneuploidy_burden": 4
+    },
+    {
+      "condition": "PA",
+      "line": "1",
+      "day": 600,
+      "aneuploidy_burden": 6
+    },
+    {
+      "condition": "PA",
+      "line": "1",
+      "day": 1000,
+      "aneuploidy_burden": 7
+    },
+    {
+      "condition": "PA",
+      "line": "2",
+      "day": 200,
+      "aneuploidy_burden": 4
+    },
+    {
+      "condition": "PA",
+      "line": "2",
+      "day": 400,
+      "aneuploidy_burden": 2
+    },
+    {
+      "condition": "PA",
+      "line": "2",
+      "day": 600,
+      "aneuploidy_burden": 8
+    },
+    {
+      "condition": "PA",
+      "line": "2",
+      "day": 1000,
+      "aneuploidy_burden": 9
+    },
+    {
+      "condition": "PA",
+      "line": "3",
+      "day": 200,
+      "aneuploidy_burden": 3
+    },
+    {
+      "condition": "PA",
+      "line": "3",
+      "day": 400,
+      "aneuploidy_burden": 2
+    },
+    {
+      "condition": "PA",
+      "line": "3",
+      "day": 600,
+      "aneuploidy_burden": 5
+    },
+    {
+      "condition": "PA",
+      "line": "3",
+      "day": 1000,
+      "aneuploidy_burden": 7
+    },
+    {
+      "condition": "PA",
+      "line": "4",
+      "day": 200,
+      "aneuploidy_burden": 3
+    },
+    {
+      "condition": "PA",
+      "line": "4",
+      "day": 400,
+      "aneuploidy_burden": 8
+    },
+    {
+      "condition": "PA",
+      "line": "4",
+      "day": 600,
+      "aneuploidy_burden": 15
+    },
+    {
+      "condition": "PA",
+      "line": "4",
+      "day": 1000,
+      "aneuploidy_burden": 14
+    },
+    {
+      "condition": "PA",
+      "line": "5",
+      "day": 200,
+      "aneuploidy_burden": 2
+    },
+    {
+      "condition": "PA",
+      "line": "5",
+      "day": 400,
+      "aneuploidy_burden": 3
+    },
+    {
+      "condition": "PA",
+      "line": "5",
+      "day": 600,
+      "aneuploidy_burden": 8
+    },
+    {
+      "condition": "PA",
+      "line": "5",
+      "day": 1000,
+      "aneuploidy_burden": 6
+    },
+    {
+      "condition": "PA",
+      "line": "ancestor",
+      "day": 0,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "1",
+      "day": 200,
+      "aneuploidy_burden": 2
+    },
+    {
+      "condition": "PM",
+      "line": "1",
+      "day": 400,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "1",
+      "day": 600,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "1",
+      "day": 1000,
+      "aneuploidy_burden": 1
+    },
+    {
+      "condition": "PM",
+      "line": "2",
+      "day": 200,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "2",
+      "day": 400,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "2",
+      "day": 600,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "2",
+      "day": 1000,
+      "aneuploidy_burden": 1
+    },
+    {
+      "condition": "PM",
+      "line": "3",
+      "day": 200,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "3",
+      "day": 400,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "3",
+      "day": 600,
+      "aneuploidy_burden": 3
+    },
+    {
+      "condition": "PM",
+      "line": "3",
+      "day": 1000,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "4",
+      "day": 200,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "4",
+      "day": 400,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "4",
+      "day": 600,
+      "aneuploidy_burden": 1
+    },
+    {
+      "condition": "PM",
+      "line": "4",
+      "day": 1000,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "5",
+      "day": 200,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "5",
+      "day": 400,
+      "aneuploidy_burden": 0
+    },
+    {
+      "condition": "PM",
+      "line": "5",
+      "day": 600,
+      "aneuploidy_burden": 1
+    },
+    {
+      "condition": "PM",
+      "line": "5",
+      "day": 1000,
+      "aneuploidy_burden": 1
+    },
+    {
+      "condition": "PM",
+      "line": "ancestor",
+      "day": 0,
+      "aneuploidy_burden": 0
+    }
+  ],
+  "overall_gate_passed": true,
+  "boundary": "Source-author intervention and longitudinal data; no necessity, universal-threshold, independent wet-lab replication, or quantitative entanglement claim."
+}

@@ -36,6 +36,22 @@ aspect-ratio mean but no corresponding radius mean and remains missing.
 The last source is theory, not an empirical result from MuLTEE, and is presented as a separate idea
 in the interactive explainer.
 
+## v1 genome-duplication source
+
+Tong, K. et al. “Genome duplication in a long-term multicellularity evolution experiment.”
+*Nature* 639, 691–699 (2025). <https://doi.org/10.1038/s41586-025-08689-6>
+
+The public source repository was audited at commit
+`aa090bbd9163dda490a5ede716bdd063270e9cd6`. It contains engineered 2N/4N replicate-level cell and
+cluster measurements plus longitudinal PA1–PA5 and PM1–PM5 phenotype, ploidy, and chromosome-copy
+tables at compatible identities and time points. Exact hashes are recorded in
+`data/provenance-v1.0.json`.
+
+The v1 audit identified an important boundary: the selected tables contain no quantitative,
+time-resolved entanglement endpoint. They can test the immediate phenotypic effect of engineered
+tetraploidy and whether tetraploidy is sufficient across metabolic treatments, but they cannot fit
+or validate a coupled genomic–entanglement threshold. The v1 protocol was narrowed accordingly.
+
 ## Licensing and reuse boundary
 
 The analysis software and original website are MIT-licensed. The source measurements remain

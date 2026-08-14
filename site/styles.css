@@ -59,7 +59,7 @@ h3 { margin: .7rem 0; font-size: 1.6rem; }
 .result-status { color: var(--green); font-weight: 750; }
 .result-card p { margin-bottom: 0; }
 
-.experiment, .treatments, .new-idea, .sources { padding: clamp(4rem, 8vw, 8rem); }
+.experiment, .treatments, .new-idea, .sources, .genome-section { padding: clamp(4rem, 8vw, 8rem); }
 .section-heading { max-width: 850px; }
 .section-heading > p:not(.eyebrow) { color: var(--muted); font: 1.2rem/1.6 var(--serif); }
 .lab-shell { display: grid; grid-template-columns: minmax(250px, .34fr) minmax(0, 1fr); margin-top: 3rem; background: #10231f; color: white; }
@@ -130,6 +130,55 @@ h3 { margin: .7rem 0; font-size: 1.6rem; }
 .mechanism-grid article { min-height: 260px; padding: 2rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .mechanism-grid article > span { color: var(--coral); font-family: ui-monospace, monospace; }
 .mechanism-grid p { color: var(--muted); }
+
+.genome-section { color: #edf5f0; background: #10231f; }
+.genome-section .section-heading > p:not(.eyebrow) { color: #b8cbc3; }
+.genome-section .eyebrow { color: #f0bd70; }
+.genome-shell { display: grid; grid-template-columns: minmax(250px, .32fr) minmax(0, .68fr); margin-top: 3rem; border: 1px solid rgba(255,255,255,.16); }
+.genome-controls { padding: clamp(1.4rem, 3vw, 2.5rem); background: #18352e; }
+.genome-controls fieldset { margin: 0 0 1.5rem; padding: 0; border: 0; }
+.genome-controls legend, .genome-controls > label { display: block; margin: 0 0 .55rem; color: #c9d8d2; font-size: .72rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.genome-controls select { width: 100%; margin-bottom: 1.5rem; padding: .75rem; color: white; background: #10231f; border: 1px solid #718b82; }
+.segmented, .time-picker { display: grid; grid-template-columns: repeat(2, 1fr); }
+.time-picker { grid-template-columns: repeat(4, 1fr); }
+.segmented button, .time-picker button { min-width: 0; padding: .65rem .3rem; color: #c5d5ce; background: transparent; border: 1px solid rgba(255,255,255,.25); cursor: pointer; font-size: .75rem; }
+.segmented button + button, .time-picker button + button { border-left: 0; }
+.segmented button[aria-pressed="true"], .time-picker button[aria-pressed="true"] { color: var(--ink); background: var(--gold-light); }
+.genome-readout { margin: 2rem 0 0; }
+.genome-readout div { display: flex; justify-content: space-between; gap: 1rem; padding: .8rem 0; border-top: 1px solid rgba(255,255,255,.15); }
+.genome-readout dt { color: #aec2ba; font-size: .78rem; }
+.genome-readout dd { margin: 0; font-family: var(--serif); font-weight: 700; }
+.genome-display { min-width: 0; padding: clamp(1.4rem, 3vw, 2.8rem); background: radial-gradient(circle at 50% 20%, #2b574b, #10231f 70%); }
+.chromosome-heading { display: flex; justify-content: space-between; align-items: end; gap: 2rem; }
+.chromosome-heading h3 { margin: 0; font-size: clamp(1.8rem, 3vw, 3rem); }
+.chromosome-heading > p { max-width: 180px; margin: 0; color: #afc3bb; text-align: right; font-size: .72rem; }
+.chromosome-grid { display: grid; grid-template-columns: repeat(16, minmax(24px, 1fr)); gap: clamp(.25rem, .8vw, .75rem); align-items: end; min-height: 330px; margin-top: 2rem; padding: 2rem 1rem 0; border-bottom: 1px solid rgba(255,255,255,.3); }
+.chromosome { display: grid; grid-template-rows: 240px auto; gap: .6rem; align-items: end; text-align: center; }
+.chromosome-bar { position: relative; min-height: 18px; border-radius: 999px 999px .25rem .25rem; background: var(--copy-color); box-shadow: 0 0 24px color-mix(in srgb, var(--copy-color) 30%, transparent); transition: height .35s ease, background .35s ease; }
+.chromosome-bar::after { content: attr(data-copy); position: absolute; inset: .45rem 0 auto; color: #10231f; font-size: .7rem; font-weight: 800; }
+.chromosome-label { color: #becfc8; font: .68rem ui-monospace, monospace; }
+.display-note { margin: 1.25rem 0 0; color: #a9beb6; font-size: .72rem; }
+.intervention-card, .two-key { margin-top: 1px; padding: clamp(1.5rem, 4vw, 3rem); color: var(--ink); background: var(--paper-2); }
+.intervention-card > div:first-child { display: flex; justify-content: space-between; gap: 2rem; align-items: end; }
+.intervention-card h3, .two-key h3 { margin: 0; font-size: clamp(1.8rem, 3vw, 3rem); }
+.effect-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 2rem; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.effect-grid article { display: flex; flex-direction: column; min-height: 170px; padding: 1.4rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.effect-grid span { color: var(--muted); font-size: .78rem; }
+.effect-grid strong { margin: auto 0 .25rem; font: 700 clamp(2rem, 4vw, 4rem)/1 var(--serif); }
+.effect-grid small { color: var(--muted); }
+.gate-note { margin-bottom: 0; font-size: .8rem; }
+.two-key { display: grid; grid-template-columns: .75fr 1.25fr; gap: 2rem 4rem; margin-top: 2rem; }
+.two-key > p { grid-column: 1 / -1; max-width: 900px; margin: 0; color: var(--muted); }
+.sufficiency-timeline { display: grid; gap: .8rem; align-content: center; }
+.timeline-row { display: grid; grid-template-columns: 70px 1fr 75px; gap: .8rem; align-items: center; }
+.timeline-track { display: grid; gap: .28rem; }
+.timeline-bar { min-width: 2px; height: 12px; border-radius: 99px; background: var(--green); }
+.timeline-bar.pm { background: var(--coral); }
+.timeline-row strong { text-align: right; font: 700 .82rem var(--serif); }
+.timeline-key { display: flex; gap: 1rem; color: var(--muted); font-size: .72rem; }
+.timeline-key i { display: inline-block; width: 12px; height: 4px; margin-right: .3rem; border-radius: 9px; background: var(--green); }
+.timeline-key .pm { background: var(--coral); }
+.evidence-boundary { padding: 1.2rem; color: #c9d8d2; border: 1px solid rgba(255,255,255,.18); border-top: 0; font-size: .82rem; }
 .large-copy { max-width: 1000px; font: clamp(1.4rem, 2.5vw, 2.2rem)/1.45 var(--serif); }
 .idea-diagram { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 1.2rem; align-items: center; margin-top: 3rem; }
 .idea-diagram div { min-height: 160px; display: grid; place-content: center; padding: 1.5rem; text-align: center; border: 1px solid var(--line); font: 700 1.3rem var(--serif); }
@@ -155,6 +204,8 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
   .lab-shell { grid-template-columns: 1fr; }
   .chamber { min-height: 520px; }
   .model-note { grid-template-columns: 1fr; }
+  .genome-shell { grid-template-columns: 1fr; }
+  .chromosome-grid { min-height: 290px; overflow-x: auto; }
   .mechanism-grid { grid-template-columns: repeat(2, 1fr); }
   .idea-diagram { grid-template-columns: 1fr; }
   .idea-diagram > span { transform: rotate(90deg); text-align: center; }
@@ -164,7 +215,7 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
   .site-header { display: block; }
   nav { margin-top: 1rem; justify-content: flex-start; }
   h1 { font-size: clamp(3rem, 15vw, 5rem); }
-  .hero-copy, .experiment, .treatments, .new-idea, .sources, .question, .trajectory-section, .mechanisms, .boundary { padding-inline: 1.1rem; }
+  .hero-copy, .experiment, .treatments, .new-idea, .sources, .question, .trajectory-section, .mechanisms, .boundary, .genome-section { padding-inline: 1.1rem; }
   .hero-facts { grid-template-columns: 1fr; }
   .hero-facts div { display: grid; grid-template-columns: 70px 1fr; align-items: baseline; }
   .hero-organism { min-height: 70vw; }
@@ -174,6 +225,12 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
   .chamber svg { height: 360px; }
   .chamber-key { position: static; padding: 0 .9rem 1rem; }
   .mechanism-grid, .source-grid { grid-template-columns: 1fr; }
+  .genome-shell, .intervention-card, .two-key, .evidence-boundary { margin-inline: -1.1rem; }
+  .chromosome-heading { display: block; }
+  .chromosome-heading > p { margin-top: .5rem; text-align: left; }
+  .chromosome-grid { grid-template-columns: repeat(16, 28px); padding-inline: 0; }
+  .effect-grid { grid-template-columns: 1fr; }
+  .two-key { grid-template-columns: 1fr; }
   .treatment-row { grid-template-columns: 110px 1fr 65px; font-size: .8rem; }
   footer { display: block; }
 }

@@ -1,3 +1,3 @@
 """Reproducible analyses for Snowflake Evolution Lab."""
 
-__version__ = "0.1.1"
+__version__ = "1.0.0"

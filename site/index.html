@@ -22,6 +22,7 @@
       </a>
       <nav aria-label="Primary navigation">
         <a href="#experiment">Experiment</a>
+        <a href="#genome">Genome</a>
         <a href="#evidence">Evidence</a>
         <a href="#boundary">Limits</a>
         <a href="https://github.com/lindgreendavid/snowflake-evolution-lab">GitHub</a>
@@ -31,7 +32,7 @@
     <main id="main">
       <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow">Experimental evolution · study v0.1</p>
+          <p class="eyebrow">Experimental evolution · stable product v1.0</p>
           <h1>When does a group become an individual?</h1>
           <p class="lede">
             Across 600 transfers, five populations of snowflake yeast evolved larger bodies made
@@ -208,14 +209,101 @@
         </div>
       </section>
 
+      <section class="genome-section" id="genome">
+        <div class="section-heading">
+          <p class="eyebrow">New v1.0 evidence</p>
+          <h2>Genome duplication helps. It is not enough.</h2>
+          <p>
+            Engineered tetraploidy produced larger cells and clusters in both tested backgrounds.
+            But all ten evolved lines were already approximately tetraploid while only the five
+            anaerobic PA lines later became macroscopic. Explore the intervention and the
+            longitudinal sufficiency test without merging those two levels of evidence.
+          </p>
+        </div>
+
+        <div class="genome-shell">
+          <aside class="genome-controls" aria-label="Genome evidence controls">
+            <fieldset>
+              <legend>Metabolic background</legend>
+              <div class="segmented" role="group" aria-label="Metabolic background">
+                <button type="button" data-genome-condition="PA" aria-pressed="true">PA · anaerobic</button>
+                <button type="button" data-genome-condition="PM" aria-pressed="false">PM · mixotrophic</button>
+              </div>
+            </fieldset>
+            <label for="genome-line">Evolved lineage</label>
+            <select id="genome-line">
+              <option value="1">Line 1</option><option value="2">Line 2</option>
+              <option value="3">Line 3</option><option value="4">Line 4</option>
+              <option value="5">Line 5</option>
+            </select>
+            <fieldset>
+              <legend>Transfer</legend>
+              <div class="time-picker" role="group" aria-label="Transfer">
+                <button type="button" data-genome-day="200" aria-pressed="true">200</button>
+                <button type="button" data-genome-day="400" aria-pressed="false">400</button>
+                <button type="button" data-genome-day="600" aria-pressed="false">600</button>
+                <button type="button" data-genome-day="1000" aria-pressed="false">1,000</button>
+              </div>
+            </fieldset>
+            <dl class="genome-readout" aria-live="polite">
+              <div><dt>G1 peak</dt><dd id="genome-ploidy">—</dd></div>
+              <div><dt>Cluster radius</dt><dd id="genome-radius">—</dd></div>
+              <div><dt>Cell aspect ratio</dt><dd id="genome-aspect">—</dd></div>
+              <div><dt>Aneuploidy burden</dt><dd id="genome-burden">—</dd></div>
+            </dl>
+          </aside>
+
+          <div class="genome-display">
+            <div class="chromosome-heading">
+              <div><p class="eyebrow">Published chromosome copy number</p><h3 id="genome-title">PA1 · transfer 200</h3></div>
+              <p>Reference baseline: 4 copies per chromosome</p>
+            </div>
+            <div id="chromosome-grid" class="chromosome-grid" role="img" aria-label="Copy numbers for sixteen yeast chromosomes"></div>
+            <p class="display-note">
+              Bar height and colour encode reported integer copy number. Aneuploidy burden is the
+              sum of absolute deviations from four—not a fitness score.
+            </p>
+          </div>
+        </div>
+
+        <div class="intervention-card">
+          <div>
+            <p class="eyebrow">Engineered intervention · four replicate strains per group</p>
+            <h3 id="intervention-title">PA: immediate 2N → 4N effect</h3>
+          </div>
+          <div class="effect-grid">
+            <article><span>24 h cluster radius</span><strong id="effect-radius">—</strong><small id="effect-radius-detail">—</small></article>
+            <article><span>Cell volume</span><strong id="effect-volume">—</strong><small id="effect-volume-detail">—</small></article>
+            <article><span>Cell aspect ratio</span><strong id="effect-aspect">—</strong><small id="effect-aspect-detail">—</small></article>
+          </div>
+          <p class="gate-note" id="intervention-inference">Exact replicate-level inference loading…</p>
+        </div>
+
+        <div class="two-key">
+          <div><p class="eyebrow">Longitudinal sufficiency test</p><h3>Same early genome shift, different later scale</h3></div>
+          <div id="sufficiency-timeline" class="sufficiency-timeline" role="img" aria-label="Mean PA and PM cluster radius at transfers 600 and 1000"></div>
+          <p>
+            At transfer 1,000, all five PA lines exceeded 300 µm; the largest PM line was 53.226 µm.
+            This rejects tetraploidy as a sufficient explanation in these treatments. It does not
+            identify which later genomic or mechanical change completed the transition.
+          </p>
+        </div>
+
+        <div class="evidence-boundary">
+          <strong>Measured here:</strong> ploidy proxy, chromosome copy number, cell geometry, and
+          cluster radius. <strong>Not measured here:</strong> a joined, quantitative time-resolved
+          entanglement endpoint. The proposed coupled threshold remains a future hypothesis.
+        </div>
+      </section>
+
       <section class="new-idea">
         <p class="eyebrow">Next registered question</p>
         <h2>A coupled-threshold hypothesis</h2>
         <p class="large-copy">
           Macroscopic multicellularity may require genomic size amplification and a mechanically
-          entangling geometry to coincide. Existing results motivate that idea, but this v0.1
-          dataset cannot test it causally. A new protocol must link genomic and morphological
-          timing before inspecting the combined outcome.
+          entangling geometry to coincide. The v1.0 result shows that genome duplication helps but
+          is not sufficient. A future protocol still needs a quantitative, time-resolved mechanical
+          endpoint before the combined threshold can be tested.
         </p>
         <div class="idea-diagram" aria-label="Hypothesis diagram">
           <div>Genome duplication<br /><small>larger, longer cells</small></div>
@@ -244,12 +332,15 @@
           <a href="https://github.com/ozanbozdag/De_novo_evolution_of_macroscopic_multicellularity"><strong>Source data</strong><span>Public workbook and analysis code</span></a>
           <a href="https://github.com/lindgreendavid/snowflake-evolution-lab/blob/main/docs/protocol-v0.1.md"><strong>Frozen protocol</strong><span>Question, endpoint, exclusions, boundaries</span></a>
           <a href="https://github.com/lindgreendavid/snowflake-evolution-lab/blob/main/docs/research-report-v0.1.md"><strong>Research report</strong><span>Result, sensitivities, interpretation</span></a>
+          <a href="https://www.nature.com/articles/s41586-025-08689-6"><strong>Genome-duplication paper</strong><span>Tong et al., Nature (2025)</span></a>
+          <a href="https://github.com/lindgreendavid/snowflake-evolution-lab/blob/main/docs/protocol-v1.0.md"><strong>Frozen v1.0 protocol</strong><span>Intervention, sufficiency gate, boundaries</span></a>
+          <a href="https://github.com/lindgreendavid/snowflake-evolution-lab/blob/main/docs/research-report-v1.0.md"><strong>v1.0 research report</strong><span>Exact tests, estimates, interpretation</span></a>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>Snowflake Evolution Lab · Product v0.1.1 · Study v0.1</p>
+      <p>Snowflake Evolution Lab · Product v1.0.0 · Frozen studies v0.1 and v1.0</p>
       <p>Original software MIT licensed. Upstream data retain their original attribution and terms.</p>
     </footer>
   </body>
