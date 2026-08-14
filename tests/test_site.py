@@ -18,6 +18,11 @@ def test_site_has_accessible_research_structure() -> None:
     assert "Modelled</strong> branch topology" in html
     assert 'data-view="packing"' in html
     assert 'data-view="fracture"' in html
+    assert 'id="mechanism-value"' in html
+    assert "chitinous tree junction" in html
+    assert "steric retention · not a bond" in html
+    assert "severed junction" in html
+    assert 'id="fracture-outcome"' in html
     assert 'id="genome"' in html
     assert 'id="chromosome-grid"' in html
     assert 'data-genome-day="1000"' in html
@@ -30,7 +35,14 @@ def test_animation_keeps_empirical_and_modelled_quantities_separate() -> None:
     assert "seededRandom" in javascript
     assert "Source value missing" in javascript
     assert "Visual interpolation between published measurements" in javascript
-    assert "modelled contact cue, not a measured entanglement rate" in javascript
+    assert "recognition seed only" in javascript
+    assert "not measured cellular stress" in javascript
+    assert "without adhesion or bond repair" in javascript
+    assert "crossComponentContacts" in javascript
+    assert "One-junction fracture stress test" in javascript
+    assert "subtreeIndices" in javascript
+    assert "appendJunction" in javascript
+    assert "Sterically retained" in javascript
 
 
 def test_site_data_matches_report_and_has_missing_value() -> None:

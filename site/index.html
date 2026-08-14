@@ -124,6 +124,7 @@
               <div><span>Mean radius</span><strong id="radius-value">16.75 µm</strong></div>
               <div><span>Relative radius</span><strong id="relative-value">1.0×</strong></div>
               <div><span>Modelled packing relief</span><strong id="packing-value">0%</strong></div>
+              <div><span>Mechanism state</span><strong id="mechanism-value">Connected tree</strong></div>
             </div>
           </div>
 
@@ -133,16 +134,22 @@
               <desc id="cluster-desc">A branching cell cluster changes with the selected published time point.</desc>
               <g id="model-field"></g>
               <g id="model-branches"></g>
-              <g id="model-breaks"></g>
-              <g id="model-entanglements"></g>
               <g id="model-cells"></g>
+              <g id="model-junctions"></g>
+              <g id="model-entanglements"></g>
+              <g id="model-breaks"></g>
             </svg>
             <div class="chamber-key">
-              <span><i class="key-cell"></i> modelled cells</span>
-              <span><i class="key-link"></i> parent–daughter bonds</span>
-              <span><i class="key-entangle"></i> retained contact</span>
-              <span><i class="key-break"></i> modelled fracture</span>
+              <span data-key="cells"><i class="key-cell"></i> modelled cells</span>
+              <span data-key="bonds"><i class="key-link"></i> chitinous tree junction</span>
+              <span data-key="contact"><i class="key-entangle"></i> steric retention · not a bond</span>
+              <span data-key="fracture"><i class="key-break"></i> severed junction</span>
             </div>
+            <div class="mechanism-status" aria-live="polite">
+              <strong id="mechanism-status-title">Connected clonal tree</strong>
+              <span id="mechanism-status-copy">Every cell has one modelled parent except the founder.</span>
+            </div>
+            <div id="fracture-outcome" class="fracture-outcome" hidden></div>
             <div class="evidence-key" aria-label="Evidence status">
               <p><strong>Measured</strong> mean cell aspect ratio · mean cluster radius</p>
               <p><strong>Modelled</strong> branch topology · contacts · fractures · packing cue</p>
@@ -157,7 +164,9 @@
           <p>
             The mechanism views operationalize the paper’s proposed sequence—elongation reduces
             packing strain; later branch entanglement can preserve cluster integrity after cellular
-            bonds fail. Their scores are explanatory cues, not additional observations.
+            bonds fail. A tree junction is a permanent chitinous parent–daughter connection;
+            steric retention is physical interlocking after a cut, not adhesion or a repaired bond.
+            These are explanatory stress tests, not additional observations at the selected transfer.
           </p>
         </div>
       </section>
@@ -340,7 +349,7 @@
     </main>
 
     <footer>
-      <p>Snowflake Evolution Lab · Product v1.0.0 · Frozen studies v0.1 and v1.0</p>
+      <p>Snowflake Evolution Lab · Product v1.0.1 · Frozen studies v0.1 and v1.0</p>
       <p>Original software MIT licensed. Upstream data retain their original attribution and terms.</p>
     </footer>
   </body>
