@@ -22,6 +22,11 @@ class Observation:
     radius_um: float | None
 
 
+def _stable(value: float) -> float:
+    """Round published metrics so JSON is stable across supported Python builds."""
+    return round(value, 12)
+
+
 def load_trajectories(path: Path) -> list[Observation]:
     """Load the attributed figure-source values without imputing missing observations."""
     with path.open(newline="", encoding="utf-8") as handle:
@@ -104,7 +109,7 @@ def _largest_jump(rows: list[Observation], field: str) -> dict[str, float | int]
             change = after_value - before_value
         changes.append((change, before.day, after.day))
     value, start, end = max(changes)
-    return {"start_day": start, "end_day": end, "change": value}
+    return {"start_day": start, "end_day": end, "change": _stable(value)}
 
 
 def _group(rows: Iterable[Observation]) -> dict[str, list[Observation]]:
@@ -136,10 +141,10 @@ def analyze(rows: list[Observation]) -> dict[str, Any]:
             {
                 "population": name,
                 "paired_observations": len(paired),
-                "spearman_rho": spearman(aspect, log_radius),
-                "spearman_without_day0": spearman(sensitivity_aspect, sensitivity_radius),
-                "pearson_log_radius": pearson(aspect, log_radius),
-                "kendall_tau_b": kendall_tau_b(aspect, log_radius),
+                "spearman_rho": _stable(spearman(aspect, log_radius)),
+                "spearman_without_day0": _stable(spearman(sensitivity_aspect, sensitivity_radius)),
+                "pearson_log_radius": _stable(pearson(aspect, log_radius)),
+                "kendall_tau_b": _stable(kendall_tau_b(aspect, log_radius)),
                 "largest_log_radius_jump": radius_jump,
                 "largest_aspect_ratio_jump": aspect_jump,
                 "jump_end_day_difference": int(radius_jump["end_day"])
@@ -164,8 +169,8 @@ def analyze(rows: list[Observation]) -> dict[str, Any]:
         "confirmatory": {
             "positive_populations": positive,
             "total_populations": len(populations),
-            "median_spearman_rho": median(correlations),
-            "exact_one_sided_sign_probability": exact_tail,
+            "median_spearman_rho": _stable(median(correlations)),
+            "exact_one_sided_sign_probability": _stable(exact_tail),
             "criterion": "all five population-level Spearman correlations are greater than zero",
             "passed": positive == 5,
         },

@@ -10,52 +10,52 @@
     {
       "population": "PA1",
       "paired_observations": 13,
-      "spearman_rho": 0.9560439560439561,
-      "spearman_without_day0": 0.9440559440559441,
-      "pearson_log_radius": 0.9125867763704832,
-      "kendall_tau_b": 0.8717948717948718,
+      "spearman_rho": 0.956043956044,
+      "spearman_without_day0": 0.944055944056,
+      "pearson_log_radius": 0.91258677637,
+      "kendall_tau_b": 0.871794871795,
       "largest_log_radius_jump": {
         "start_day": 450,
         "end_day": 500,
-        "change": 0.5282644252676287
+        "change": 0.528264425268
       },
       "largest_aspect_ratio_jump": {
         "start_day": 500,
         "end_day": 550,
-        "change": 0.31248999999999993
+        "change": 0.31249
       },
       "jump_end_day_difference": -50
     },
     {
       "population": "PA2",
       "paired_observations": 12,
-      "spearman_rho": 0.958041958041958,
-      "spearman_without_day0": 0.9454545454545454,
-      "pearson_log_radius": 0.9806364692965668,
-      "kendall_tau_b": 0.8484848484848485,
+      "spearman_rho": 0.958041958042,
+      "spearman_without_day0": 0.945454545455,
+      "pearson_log_radius": 0.980636469297,
+      "kendall_tau_b": 0.848484848485,
       "largest_log_radius_jump": {
         "start_day": 300,
         "end_day": 350,
-        "change": 0.464515128960568
+        "change": 0.464515128961
       },
       "largest_aspect_ratio_jump": {
         "start_day": 450,
         "end_day": 500,
-        "change": 0.4899600000000004
+        "change": 0.48996
       },
       "jump_end_day_difference": -150
     },
     {
       "population": "PA3",
       "paired_observations": 13,
-      "spearman_rho": 0.9230769230769231,
-      "spearman_without_day0": 0.9020979020979021,
-      "pearson_log_radius": 0.9482814619727613,
-      "kendall_tau_b": 0.8205128205128205,
+      "spearman_rho": 0.923076923077,
+      "spearman_without_day0": 0.902097902098,
+      "pearson_log_radius": 0.948281461973,
+      "kendall_tau_b": 0.820512820513,
       "largest_log_radius_jump": {
         "start_day": 550,
         "end_day": 600,
-        "change": 0.29733181189055813
+        "change": 0.297331811891
       },
       "largest_aspect_ratio_jump": {
         "start_day": 350,
@@ -67,14 +67,14 @@
     {
       "population": "PA4",
       "paired_observations": 13,
-      "spearman_rho": 0.9560439560439561,
-      "spearman_without_day0": 0.9440559440559441,
-      "pearson_log_radius": 0.8927997028292874,
-      "kendall_tau_b": 0.8461538461538461,
+      "spearman_rho": 0.956043956044,
+      "spearman_without_day0": 0.944055944056,
+      "pearson_log_radius": 0.892799702829,
+      "kendall_tau_b": 0.846153846154,
       "largest_log_radius_jump": {
         "start_day": 450,
         "end_day": 500,
-        "change": 0.7622815406455328
+        "change": 0.762281540646
       },
       "largest_aspect_ratio_jump": {
         "start_day": 300,
@@ -86,19 +86,19 @@
     {
       "population": "PA5",
       "paired_observations": 13,
-      "spearman_rho": 0.967032967032967,
-      "spearman_without_day0": 0.958041958041958,
-      "pearson_log_radius": 0.9651036815316753,
-      "kendall_tau_b": 0.8717948717948718,
+      "spearman_rho": 0.967032967033,
+      "spearman_without_day0": 0.958041958042,
+      "pearson_log_radius": 0.965103681532,
+      "kendall_tau_b": 0.871794871795,
       "largest_log_radius_jump": {
         "start_day": 350,
         "end_day": 400,
-        "change": 0.40011068625017243
+        "change": 0.40011068625
       },
       "largest_aspect_ratio_jump": {
         "start_day": 450,
         "end_day": 500,
-        "change": 0.7280899999999999
+        "change": 0.72809
       },
       "jump_end_day_difference": -100
     }
@@ -106,7 +106,7 @@
   "confirmatory": {
     "positive_populations": 5,
     "total_populations": 5,
-    "median_spearman_rho": 0.9560439560439561,
+    "median_spearman_rho": 0.956043956044,
     "exact_one_sided_sign_probability": 0.03125,
     "criterion": "all five population-level Spearman correlations are greater than zero",
     "passed": true
