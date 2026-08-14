@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "product_version": "0.1.0",
+  "study_version": "0.1",
+  "question": "Is the aspect-ratio versus cluster-radius association positive in every anaerobic MuLTEE lineage?",
+  "source_observations": 65,
+  "paired_observations": 64,
+  "inference_units": 5,
+  "populations": [
+    {
+      "population": "PA1",
+      "paired_observations": 13,
+      "spearman_rho": 0.9560439560439561,
+      "spearman_without_day0": 0.9440559440559441,
+      "pearson_log_radius": 0.9125867763704832,
+      "kendall_tau_b": 0.8717948717948718,
+      "largest_log_radius_jump": {
+        "start_day": 450,
+        "end_day": 500,
+        "change": 0.5282644252676287
+      },
+      "largest_aspect_ratio_jump": {
+        "start_day": 500,
+        "end_day": 550,
+        "change": 0.31248999999999993
+      },
+      "jump_end_day_difference": -50
+    },
+    {
+      "population": "PA2",
+      "paired_observations": 12,
+      "spearman_rho": 0.958041958041958,
+      "spearman_without_day0": 0.9454545454545454,
+      "pearson_log_radius": 0.9806364692965668,
+      "kendall_tau_b": 0.8484848484848485,
+      "largest_log_radius_jump": {
+        "start_day": 300,
+        "end_day": 350,
+        "change": 0.464515128960568
+      },
+      "largest_aspect_ratio_jump": {
+        "start_day": 450,
+        "end_day": 500,
+        "change": 0.4899600000000004
+      },
+      "jump_end_day_difference": -150
+    },
+    {
+      "population": "PA3",
+      "paired_observations": 13,
+      "spearman_rho": 0.9230769230769231,
+      "spearman_without_day0": 0.9020979020979021,
+      "pearson_log_radius": 0.9482814619727613,
+      "kendall_tau_b": 0.8205128205128205,
+      "largest_log_radius_jump": {
+        "start_day": 550,
+        "end_day": 600,
+        "change": 0.29733181189055813
+      },
+      "largest_aspect_ratio_jump": {
+        "start_day": 350,
+        "end_day": 400,
+        "change": 0.37564
+      },
+      "jump_end_day_difference": 200
+    },
+    {
+      "population": "PA4",
+      "paired_observations": 13,
+      "spearman_rho": 0.9560439560439561,
+      "spearman_without_day0": 0.9440559440559441,
+      "pearson_log_radius": 0.8927997028292874,
+      "kendall_tau_b": 0.8461538461538461,
+      "largest_log_radius_jump": {
+        "start_day": 450,
+        "end_day": 500,
+        "change": 0.7622815406455328
+      },
+      "largest_aspect_ratio_jump": {
+        "start_day": 300,
+        "end_day": 350,
+        "change": 0.3671
+      },
+      "jump_end_day_difference": 150
+    },
+    {
+      "population": "PA5",
+      "paired_observations": 13,
+      "spearman_rho": 0.967032967032967,
+      "spearman_without_day0": 0.958041958041958,
+      "pearson_log_radius": 0.9651036815316753,
+      "kendall_tau_b": 0.8717948717948718,
+      "largest_log_radius_jump": {
+        "start_day": 350,
+        "end_day": 400,
+        "change": 0.40011068625017243
+      },
+      "largest_aspect_ratio_jump": {
+        "start_day": 450,
+        "end_day": 500,
+        "change": 0.7280899999999999
+      },
+      "jump_end_day_difference": -100
+    }
+  ],
+  "confirmatory": {
+    "positive_populations": 5,
+    "total_populations": 5,
+    "median_spearman_rho": 0.9560439560439561,
+    "exact_one_sided_sign_probability": 0.03125,
+    "criterion": "all five population-level Spearman correlations are greater than zero",
+    "passed": true
+  },
+  "boundary": "Directional concordance in five selected anaerobic laboratory populations; no causal, universal-threshold, or historical-origin claim."
+}
