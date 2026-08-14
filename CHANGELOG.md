@@ -4,6 +4,19 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-08-14
+
+### Changed
+
+- Rebuilt all five deterministic colony-recognition seeds with balanced, collision-aware clonal
+  trees across every published transfer stage.
+- Made intact chitinous parent–daughter junctions, one severed junction, detached subtrees, and
+  non-adhesive steric retention visually distinct.
+- Replaced decorative packing and fracture cues with geometry-derived explanatory stress tests and
+  explicit state readouts.
+- Clarified throughout the interface that topology, packing load, fracture position, and retained
+  contacts are modelled—not population-specific microscopy or additional observations.
+
 ## [1.0.0] - 2026-08-14
 
 ### Added

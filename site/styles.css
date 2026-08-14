@@ -94,18 +94,29 @@ h3 { margin: .7rem 0; font-size: 1.6rem; }
 .readout span { color: #b9cac3; font-size: .82rem; }
 .chamber { position: relative; min-height: 620px; overflow: hidden; background: radial-gradient(circle at 50% 45%, #315d50 0, #10231f 66%); }
 .chamber svg { width: 100%; height: 100%; max-height: 680px; }
-.model-cell { transition: cx .18s ease, cy .18s ease, rx .18s ease, ry .18s ease, fill .18s ease; }
-.entanglement { stroke-dasharray: 7 4; animation: trace-contact 1.8s linear infinite; }
-.broken-bond { stroke-linecap: round; filter: drop-shadow(0 0 4px rgba(255,128,104,.6)); }
+.model-cell { transition: cx .18s ease, cy .18s ease, rx .18s ease, ry .18s ease, fill .18s ease, opacity .18s ease; }
+.tree-bond { stroke-linecap: round; }
+.tree-junction { filter: drop-shadow(0 0 2px rgba(216,255,240,.7)); }
+.entanglement { stroke-dasharray: 9 5; stroke-linecap: round; animation: trace-contact 1.8s linear infinite; filter: drop-shadow(0 0 4px rgba(255,209,102,.5)); }
+.broken-bond { stroke-linecap: round; filter: drop-shadow(0 0 5px rgba(255,107,94,.75)); }
+.cut-junction { filter: drop-shadow(0 0 7px rgba(255,107,94,.95)); }
+.detached-component { filter: drop-shadow(0 0 2px rgba(231,135,105,.4)); }
 .packing-field { animation: stress-pulse 2.2s ease-in-out infinite alternate; }
 @keyframes trace-contact { to { stroke-dashoffset: -22; } }
 @keyframes stress-pulse { to { transform: scale(1.08); transform-origin: center; } }
 .chamber-key { position: absolute; left: 1.2rem; bottom: 1rem; display: flex; flex-wrap: wrap; gap: .65rem 1.2rem; max-width: calc(100% - 2.4rem); color: #c6d4ce; font-size: .7rem; }
 .chamber-key span { display: flex; align-items: center; gap: .45rem; }
+.chamber-key span { transition: opacity .2s ease; }
+.chamber-key span.inactive { opacity: .28; }
 .key-cell { width: 12px; height: 18px; border-radius: 50%; background: var(--gold-light); }
-.key-link { width: 20px; height: 2px; background: #9bc0ae; }
-.key-entangle { width: 20px; height: 7px; border-top: 2px dashed #f1b75b; }
-.key-break { width: 20px; height: 2px; background: linear-gradient(90deg, #ff8068 0 38%, transparent 38% 62%, #ff8068 62%); }
+.key-link { width: 20px; height: 6px; background: radial-gradient(circle, #d8fff0 0 25%, transparent 27%), linear-gradient(#b8e0d0,#b8e0d0) center/100% 2px no-repeat; }
+.key-entangle { width: 20px; height: 7px; border-top: 3px dashed #ffd166; }
+.key-break { width: 20px; height: 5px; background: linear-gradient(90deg, #ff6b5e 0 34%, transparent 34% 66%, #ff6b5e 66%); }
+.mechanism-status { position: absolute; top: 1rem; left: 1rem; z-index: 2; display: grid; gap: .18rem; max-width: 320px; padding: .7rem .9rem; color: #c6d4ce; background: rgba(7,24,20,.78); border: 1px solid rgba(255,255,255,.14); border-radius: .5rem; backdrop-filter: blur(8px); font-size: .67rem; }
+.mechanism-status strong { color: white; font-size: .72rem; }
+.fracture-outcome { position: absolute; left: 50%; bottom: 3.5rem; z-index: 2; max-width: min(520px, calc(100% - 2rem)); padding: .55rem .85rem; border: 1px solid; border-radius: 999px; background: rgba(7,24,20,.88); transform: translateX(-50%); text-align: center; font-size: .68rem; font-weight: 750; letter-spacing: .02em; }
+.fracture-outcome.retained { color: #ffe59a; border-color: rgba(255,209,102,.65); }
+.fracture-outcome.detached { color: #ffb1a2; border-color: rgba(255,107,94,.68); }
 .evidence-key { position: absolute; top: 1rem; right: 1rem; max-width: 310px; padding: .7rem .9rem; color: #c6d4ce; background: rgba(7,24,20,.72); border: 1px solid rgba(255,255,255,.12); border-radius: .5rem; backdrop-filter: blur(8px); font-size: .67rem; }
 .evidence-key p { margin: .25rem 0; }
 .evidence-key strong { color: white; }
@@ -222,6 +233,8 @@ footer { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem
   .lab-shell { margin-inline: -1.1rem; }
   .chamber { min-height: 420px; }
   .evidence-key { position: static; max-width: none; margin: .75rem; }
+  .mechanism-status { position: static; max-width: none; margin: .75rem; }
+  .fracture-outcome { position: static; max-width: none; margin: 0 .75rem .75rem; transform: none; border-radius: .5rem; }
   .chamber svg { height: 360px; }
   .chamber-key { position: static; padding: 0 .9rem 1rem; }
   .mechanism-grid, .source-grid { grid-template-columns: 1fr; }

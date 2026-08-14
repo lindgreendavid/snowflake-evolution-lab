@@ -39,29 +39,52 @@ function buildTopology(population, maximum = 150) {
   if (topologyCache[cacheKey]) return topologyCache[cacheKey];
   const profile = profiles[population];
   const random = seededRandom(profile.seed);
-  const cells = [{ x: 0, y: 0, angle: -Math.PI / 2, parent: null, depth: 0 }];
-  const tips = [];
+  const cells = [{ x: 0, y: 0, angle: -Math.PI / 2, parent: null, depth: 0, arm: null }];
+  const tips = Array.from({ length: profile.arms }, () => []);
   for (let arm = 0; arm < profile.arms; arm += 1) {
     const angle = (arm / profile.arms) * Math.PI * 2 - Math.PI / 2 + (random() - .5) * .12;
-    cells.push({ x: Math.cos(angle), y: Math.sin(angle), angle, parent: 0, depth: 1 });
-    tips.push(cells.length - 1);
+    cells.push({ x: Math.cos(angle), y: Math.sin(angle), angle, parent: 0, depth: 1, arm });
+    tips[arm].push(cells.length - 1);
   }
   while (cells.length < maximum) {
-    const tipPosition = Math.floor(random() * tips.length);
-    let parentIndex = tips[tipPosition];
+    const arm = (cells.length - profile.arms - 1) % profile.arms;
+    const armTips = tips[arm];
+    const tipPosition = Math.floor(random() * armTips.length);
+    let parentIndex = armTips[tipPosition];
     const shouldSplit = random() < profile.split;
-    if (shouldSplit && cells.length > profile.arms * 2) {
-      const lookBack = 1 + Math.floor(random() * Math.min(15, cells.length - 1));
-      parentIndex = Math.max(1, cells.length - lookBack);
+    if (shouldSplit && cells.length > profile.arms * 3) {
+      const sameArm = cells
+        .map((cell, index) => ({ cell, index }))
+        .filter(({ cell }) => cell.arm === arm && cell.depth > 1);
+      parentIndex = sameArm[Math.floor(random() * sameArm.length)].index;
     }
     const parent = cells[parentIndex];
     const direction = random() < .5 ? -1 : 1;
-    const angle = parent.angle + profile.turn + (shouldSplit ? direction * (.42 + random() * .44) : 0) + (random() - .5) * profile.jitter;
-    const step = .78 + random() * .42;
-    cells.push({ x: parent.x + Math.cos(angle) * step, y: parent.y + Math.sin(angle) * step, angle, parent: parentIndex, depth: parent.depth + 1 });
+    let best = null;
+    for (let attempt = 0; attempt < 7; attempt += 1) {
+      const angle = parent.angle + profile.turn +
+        (shouldSplit ? direction * (.38 + random() * .42) : 0) +
+        (random() - .5) * profile.jitter;
+      const step = .84 + random() * .28;
+      const candidate = {
+        x: parent.x + Math.cos(angle) * step,
+        y: parent.y + Math.sin(angle) * step,
+        angle,
+      };
+      const clearance = Math.min(
+        ...cells.filter((_, index) => index !== parentIndex)
+          .map((cell) => Math.hypot(candidate.x - cell.x, candidate.y - cell.y)),
+      );
+      const score = clearance + .08 * Math.hypot(candidate.x, candidate.y);
+      if (!best || score > best.score) best = { ...candidate, score };
+    }
+    cells.push({
+      x: best.x, y: best.y, angle: best.angle, parent: parentIndex,
+      depth: parent.depth + 1, arm,
+    });
     const nextIndex = cells.length - 1;
-    if (shouldSplit) tips.push(nextIndex); else tips[tipPosition] = nextIndex;
-    if (tips.length > 24) tips.splice(Math.floor(random() * tips.length), 1);
+    if (shouldSplit) armTips.push(nextIndex); else armTips[tipPosition] = nextIndex;
+    if (armTips.length > 5) armTips.splice(Math.floor(random() * armTips.length), 1);
   }
   const maxDistance = Math.max(...cells.map((cell) => Math.hypot(cell.x, cell.y)));
   cells.forEach((cell) => { cell.x /= maxDistance; cell.y /= maxDistance; });
@@ -93,34 +116,120 @@ function modelMetrics(aspect, radius) {
 function visibleCells(population, count, visualRadius) {
   return buildTopology(population).slice(0, count).map((cell) => ({ ...cell, x: 400 + cell.x * visualRadius, y: 300 + cell.y * visualRadius }));
 }
+function localCrowding(cells) {
+  const scores = cells.map((cell, index) => cells.reduce((count, other, otherIndex) => {
+    if (index === otherIndex) return count;
+    const distance = Math.hypot(cell.x - other.x, cell.y - other.y);
+    return count + (distance < 42 ? (42 - distance) / 42 : 0);
+  }, 0));
+  const maximum = Math.max(...scores, 1);
+  return scores.map((score) => score / maximum);
+}
 function drawPackingField(group, cells, packingRelief) {
   group.replaceChildren();
-  if (state.view !== "packing") return;
-  const density = 1 - packingRelief;
+  if (state.view !== "packing") return [];
+  const crowding = localCrowding(cells);
+  const load = crowding.map((value) => value * (1 - .65 * packingRelief));
   cells.forEach((cell, index) => {
-    if (index % 5 !== 0 || index === 0) return;
-    group.append(svgElement("circle", { cx: cell.x, cy: cell.y, r: 17 + density * 14, fill: `rgba(231, 110, 76, ${.05 + density * .22})`, class: "packing-field" }));
+    if (load[index] < .32 || index === 0) return;
+    group.append(svgElement("circle", {
+      cx: cell.x, cy: cell.y, r: 15 + load[index] * 23,
+      fill: `rgba(255, 112, 84, ${.05 + load[index] * .28})`,
+      stroke: `rgba(255, 171, 119, ${.15 + load[index] * .55})`,
+      "stroke-width": 1.2, class: "packing-field",
+    }));
+  });
+  return load;
+}
+function subtreeIndices(cells, rootIndex) {
+  const result = new Set([rootIndex]);
+  let changed = true;
+  while (changed) {
+    changed = false;
+    cells.forEach((cell, index) => {
+      if (!result.has(index) && result.has(cell.parent)) {
+        result.add(index); changed = true;
+      }
+    });
+  }
+  return result;
+}
+function crossComponentContacts(cells, detached) {
+  const contacts = [];
+  cells.forEach((first, firstIndex) => {
+    if (!detached.has(firstIndex)) return;
+    cells.forEach((second, secondIndex) => {
+      if (detached.has(secondIndex) || firstIndex === secondIndex) return;
+      const distance = Math.hypot(first.x - second.x, first.y - second.y);
+      if (distance >= 15 && distance <= 52) contacts.push([firstIndex, secondIndex, distance]);
+    });
+  });
+  return contacts.sort((a, b) => a[2] - b[2]);
+}
+function fractureScenario(cells, metrics) {
+  const candidates = [];
+  for (let index = 1; index < cells.length; index += 1) {
+    if (cells[index].depth < 3) continue;
+    const detached = subtreeIndices(cells, index);
+    if (detached.size < 2 || detached.size > cells.length * .42) continue;
+    const contacts = crossComponentContacts(cells, detached);
+    candidates.push({ index, detached, contacts });
+  }
+  const eligible = metrics.entanglement >= .24 && cells.length >= 42;
+  candidates.sort((a, b) => eligible
+    ? b.contacts.length - a.contacts.length || b.detached.size - a.detached.size
+    : a.contacts.length - b.contacts.length || a.detached.size - b.detached.size);
+  const fallbackIndex = Math.max(1, cells.length - 1);
+  const selected = candidates[0] || {
+    index: fallbackIndex,
+    detached: subtreeIndices(cells, fallbackIndex),
+    contacts: [],
+  };
+  const retained = eligible && selected.contacts.length > 0;
+  return { ...selected, retained, contacts: retained ? selected.contacts.slice(0, 5) : [] };
+}
+function drawEntanglements(group, cells, scenario) {
+  group.replaceChildren();
+  if (state.view !== "fracture" || !scenario.retained) return;
+  scenario.contacts.forEach(([a, b], index) => {
+    const first = cells[a]; const second = cells[b];
+    const middleX = (first.x + second.x) / 2 + (index % 2 ? 8 : -8);
+    const middleY = (first.y + second.y) / 2 + (index % 2 ? -7 : 7);
+    const path = svgElement("path", {
+      d: `M${first.x},${first.y} Q${middleX},${middleY} ${second.x},${second.y}`,
+      fill: "none", stroke: "#ffd166", "stroke-width": 5, opacity: .96,
+      class: "entanglement retained-contact",
+    });
+    const title = svgElement("title");
+    title.textContent = "Modelled steric contact between disconnected branches—not a bond";
+    path.append(title); group.append(path);
   });
 }
-function drawEntanglements(group, cells, score, population) {
-  group.replaceChildren();
-  if (score < .08 || cells.length < 35) return;
-  const random = seededRandom(profiles[population].seed + 909);
-  const candidates = [];
-  for (let i = 8; i < cells.length; i += 1) {
-    for (let j = 3; j < i - 5; j += 1) {
-      if (cells[i].parent === j || cells[j].parent === i) continue;
-      const distance = Math.hypot(cells[i].x - cells[j].x, cells[i].y - cells[j].y);
-      if (distance > 20 && distance < 68 && random() > .48) candidates.push([i, j, distance]);
-    }
-  }
-  candidates.sort((a, b) => a[2] - b[2]);
-  const limit = Math.min(candidates.length, Math.round(2 + score * 14));
-  candidates.slice(0, limit).forEach(([a, b], index) => {
-    const first = cells[a]; const second = cells[b];
-    const middleX = (first.x + second.x) / 2 + (index % 2 ? 10 : -10);
-    const middleY = (first.y + second.y) / 2 + (index % 2 ? -8 : 8);
-    group.append(svgElement("path", { d: `M${first.x},${first.y} Q${middleX},${middleY} ${second.x},${second.y}`, fill: "none", stroke: "#f1b75b", "stroke-width": state.view === "fracture" ? 4 : 2, opacity: state.view === "packing" ? .25 : .78, class: "entanglement" }));
+
+function appendJunction(group, parent, cell, status = "intact") {
+  const x = (parent.x + cell.x) / 2;
+  const y = (parent.y + cell.y) / 2;
+  const marker = svgElement("circle", {
+    cx: x, cy: y, r: status === "cut" ? 5.5 : 2.8,
+    fill: status === "cut" ? "#10231f" : "#d8fff0",
+    stroke: status === "cut" ? "#ff6b5e" : "#2f7461",
+    "stroke-width": status === "cut" ? 3 : 1.4,
+    class: status === "cut" ? "cut-junction" : "tree-junction",
+  });
+  const title = svgElement("title");
+  title.textContent = status === "cut"
+    ? "Illustrative severed chitinous parent–daughter junction"
+    : "Modelled permanent chitinous parent–daughter junction";
+  marker.append(title); group.append(marker);
+}
+
+function syncMechanismLegend(scenario) {
+  document.querySelectorAll(".chamber-key [data-key]").forEach((item) => {
+    const key = item.dataset.key;
+    const active = key === "cells" || key === "bonds" ||
+      (state.view === "fracture" && key === "fracture") ||
+      (state.view === "fracture" && key === "contact" && scenario.retained);
+    item.classList.toggle("inactive", !active);
   });
 }
 
@@ -129,34 +238,63 @@ function drawCluster(data) {
   const breakGroup = document.querySelector("#model-breaks");
   const entangleGroup = document.querySelector("#model-entanglements");
   const cellGroup = document.querySelector("#model-cells");
+  const junctionGroup = document.querySelector("#model-junctions");
   branchGroup.replaceChildren(); breakGroup.replaceChildren(); cellGroup.replaceChildren();
+  junctionGroup.replaceChildren(); entangleGroup.replaceChildren();
   const metrics = modelMetrics(data.aspect, data.radius);
   const cells = visibleCells(data.population, Math.round(18 + metrics.growth * 125), 72 + metrics.growth * 190);
-  const fractureStart = Math.round(cells.length * (.9 - metrics.entanglement * .18));
-  const fractured = new Set();
-  if (metrics.entanglement > .22) for (let i = fractureStart; i < cells.length; i += Math.max(8, Math.round(15 - metrics.entanglement * 6))) fractured.add(i);
+  const scenario = fractureScenario(cells, metrics);
   cells.forEach((cell, index) => {
     if (cell.parent === null) return;
     const parent = cells[cell.parent];
     if (!parent) return;
-    if (fractured.has(index)) {
-      const dx = cell.x - parent.x; const dy = cell.y - parent.y; const length = Math.hypot(dx, dy); const ux = dx / length; const uy = dy / length;
-      [[parent.x, parent.y, parent.x + dx * .38, parent.y + dy * .38], [cell.x - ux * length * .38, cell.y - uy * length * .38, cell.x, cell.y]].forEach((line) => {
-        breakGroup.append(svgElement("line", { x1: line[0], y1: line[1], x2: line[2], y2: line[3], stroke: "#ff8068", "stroke-width": state.view === "fracture" ? 5 : 2.4, opacity: state.view === "packing" ? .18 : .9, class: "broken-bond" }));
-      });
-    } else {
-      branchGroup.append(svgElement("line", { x1: parent.x, y1: parent.y, x2: cell.x, y2: cell.y, stroke: "#9bc0ae", "stroke-width": state.view === "fracture" ? 2 : 3, opacity: state.view === "packing" ? .28 : .68 }));
-    }
+    const cut = state.view === "fracture" && index === scenario.index;
+    if (cut) return;
+    branchGroup.append(svgElement("line", {
+      x1: parent.x, y1: parent.y, x2: cell.x, y2: cell.y,
+      stroke: "#b8e0d0", "stroke-width": state.view === "fracture" ? 2.2 : 3.2,
+      opacity: state.view === "packing" ? .38 : .78, class: "tree-bond",
+    }));
   });
-  drawPackingField(document.querySelector("#model-field"), cells, metrics.packingRelief);
-  drawEntanglements(entangleGroup, cells, metrics.entanglement, data.population);
+  const packingLoad = drawPackingField(
+    document.querySelector("#model-field"), cells, metrics.packingRelief,
+  );
   const rx = clamp(8.4 / Math.sqrt(data.aspect), 4.2, 7.5);
   const ry = clamp(8.4 * Math.sqrt(data.aspect), 9, 16);
   cells.forEach((cell, index) => {
-    const fill = state.view === "packing" ? `hsl(${35 + metrics.packingRelief * 85} 72% ${62 + (index % 4) * 3}%)` : index % 7 === 0 ? "#ffe59a" : colors[data.population];
-    cellGroup.append(svgElement("ellipse", { cx: cell.x, cy: cell.y, rx, ry, fill, stroke: "#f4efe3", "stroke-width": .8, opacity: state.view === "fracture" ? .78 : .96, transform: `rotate(${(cell.angle * 180) / Math.PI + 90} ${cell.x} ${cell.y})`, class: "model-cell", style: `--cell-index:${index}` }));
+    const detached = state.view === "fracture" && scenario.detached.has(index);
+    const loaded = state.view === "packing" && packingLoad[index] > .58;
+    const fill = index === 0 ? "#ffe59a" : detached ? "#e78769" : loaded ? "#f2b36d" : colors[data.population];
+    cellGroup.append(svgElement("ellipse", {
+      cx: cell.x, cy: cell.y, rx, ry, fill, stroke: "#f4efe3", "stroke-width": 1,
+      opacity: state.view === "fracture" && !detached ? .74 : .97,
+      transform: `rotate(${(cell.angle * 180) / Math.PI + 90} ${cell.x} ${cell.y})`,
+      class: `model-cell${detached ? " detached-component" : ""}`,
+      style: `--cell-index:${index}`,
+    }));
   });
-  return metrics;
+  cells.forEach((cell, index) => {
+    if (cell.parent === null || (state.view === "fracture" && index === scenario.index)) return;
+    const parent = cells[cell.parent];
+    if (parent) appendJunction(junctionGroup, parent, cell);
+  });
+  if (state.view === "fracture") {
+    const cell = cells[scenario.index]; const parent = cells[cell.parent];
+    if (parent) {
+      const midpointX = (parent.x + cell.x) / 2;
+      const midpointY = (parent.y + cell.y) / 2;
+      [[parent.x, parent.y, midpointX - (cell.x - parent.x) * .12, midpointY - (cell.y - parent.y) * .12],
+        [midpointX + (cell.x - parent.x) * .12, midpointY + (cell.y - parent.y) * .12, cell.x, cell.y]]
+        .forEach((line) => breakGroup.append(svgElement("line", {
+          x1: line[0], y1: line[1], x2: line[2], y2: line[3],
+          stroke: "#ff6b5e", "stroke-width": 5, opacity: 1, class: "broken-bond",
+        })));
+      appendJunction(breakGroup, parent, cell, "cut");
+    }
+  }
+  drawEntanglements(entangleGroup, cells, scenario);
+  syncMechanismLegend(scenario);
+  return { metrics, scenario, cellCount: cells.length, packingLoad };
 }
 
 function drawHero() {
@@ -166,9 +304,46 @@ function drawHero() {
 function syncPopulationControls(population) {
   document.querySelectorAll("[data-population]").forEach((button) => { const active = button.dataset.population === population; button.classList.toggle("active", active); button.setAttribute("aria-pressed", String(active)); });
 }
+function updateMechanismStatus(data, render) {
+  const title = document.querySelector("#mechanism-status-title");
+  const copy = document.querySelector("#mechanism-status-copy");
+  const outcome = document.querySelector("#fracture-outcome");
+  if (state.view === "colony") {
+    title.textContent = "Connected clonal tree";
+    copy.textContent = "Pale collars mark permanent chitinous parent–daughter junctions. The founder is gold.";
+    outcome.hidden = true;
+    document.querySelector("#mechanism-value").textContent = "Connected tree";
+  } else if (state.view === "packing") {
+    title.textContent = "Illustrative packing load";
+    copy.textContent = "Warm halos mark locally crowded model regions; cell elongation reduces the normalized load cue.";
+    outcome.hidden = true;
+    document.querySelector("#mechanism-value").textContent = "Packing stress test";
+  } else {
+    title.textContent = "One-junction fracture stress test";
+    copy.textContent = "Coral cells form the disconnected tree component after the red chitinous junction is cut.";
+    outcome.hidden = false;
+    outcome.classList.toggle("retained", render.scenario.retained);
+    outcome.classList.toggle("detached", !render.scenario.retained);
+    outcome.textContent = render.scenario.retained
+      ? `${render.scenario.contacts.length} steric contact${render.scenario.contacts.length === 1 ? "" : "s"} retain the component · no adhesion`
+      : "No cross-component steric retention in this illustrative geometry · component detaches";
+    document.querySelector("#mechanism-value").textContent = render.scenario.retained
+      ? "Sterically retained" : "Component detaches";
+  }
+  window.__snowflakeModelSnapshot = {
+    population: data.population,
+    day: data.day,
+    view: state.view,
+    cells: render.cellCount,
+    intactJunctions: document.querySelectorAll(".tree-junction").length,
+    severedJunctions: document.querySelectorAll(".cut-junction").length,
+    retainedContacts: document.querySelectorAll(".retained-contact").length,
+    retained: render.scenario.retained,
+  };
+}
 function updateChamber() {
   const data = selectedData(); const isPublishedPoint = data.day % 50 === 0; const sourceMissing = data.exact && data.exact.radius_um === null;
-  const metrics = drawCluster(data);
+  const render = drawCluster(data); const metrics = render.metrics;
   document.querySelector("#day-output").value = String(data.day);
   document.querySelector("#aspect-value").textContent = `${isPublishedPoint ? "" : "≈ "}${data.aspect.toFixed(2)}`;
   document.querySelector("#radius-value").textContent = sourceMissing ? "Not reported" : `${isPublishedPoint ? "" : "≈ "}${data.radius.toFixed(2)} µm`;
@@ -177,8 +352,16 @@ function updateChamber() {
   const status = document.querySelector("#measurement-status");
   status.textContent = sourceMissing ? "Source value missing · animation bridges neighbouring measurements" : isPublishedPoint ? "Published measurement" : "Visual interpolation between published measurements";
   status.classList.toggle("warning", Boolean(sourceMissing));
-  document.querySelector("#model-explanation").textContent = `A fixed ${data.population} ${profiles[data.population].name} generates one repeatable illustrative topology. The published means determine its scale and cell elongation; ${Math.round(metrics.entanglement * 100)}% is a modelled contact cue, not a measured entanglement rate.`;
+  const viewExplanation = state.view === "colony"
+    ? "The connected tree exposes chitinous parent–daughter junctions without implying measured lineage topology."
+    : state.view === "packing"
+      ? `The normalized packing-relief cue is ${Math.round(metrics.packingRelief * 100)}%; warm halos show model crowding, not measured cellular stress.`
+      : render.scenario.retained
+        ? "After one model junction is severed, dashed gold paths mark steric cross-component contacts that retain the coral branch without adhesion or bond repair."
+        : "After one model junction is severed, the coral component has no qualifying cross-component contact and would detach.";
+  document.querySelector("#model-explanation").textContent = `A fixed ${data.population} ${profiles[data.population].name} supplies a repeatable recognition seed only. Published means determine display scale and cell elongation. ${viewExplanation}`;
   document.querySelector("#cluster-desc").textContent = `${data.population} at transfer ${data.day}: an explanatory branching model driven by published mean aspect ratio and radius.`;
+  updateMechanismStatus(data, render);
   syncPopulationControls(data.population);
 }
 function stopPlayback() {

@@ -23,7 +23,8 @@ Replay the original transfer 0–600 morphology trajectories, then open the v1 g
 compare engineered 2N/4N effects and inspect chromosome copy number, G1 peak, and cluster radius
 through transfer 1,000. Published summaries drive the displays. The colony animation remains an
 explanatory model—not microscopy or a forward evolutionary simulation—and its full mapping is
-documented in the [animation model specification](docs/animation-model-v0.1.md).
+documented in the [current animation model specification](docs/animation-model-v1.0.1.md). The
+historical [v0.1 specification](docs/animation-model-v0.1.md) remains available unchanged.
 
 ## Evidence
 
