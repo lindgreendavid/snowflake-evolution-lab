@@ -14,6 +14,18 @@ def test_site_has_accessible_research_structure() -> None:
     assert 'aria-live="polite"' in html
     assert "not microscopy" in html
     assert "5 / 5 positive" in html
+    assert "Measured</strong> mean cell aspect ratio" in html
+    assert "Modelled</strong> branch topology" in html
+    assert 'data-view="packing"' in html
+    assert 'data-view="fracture"' in html
+
+
+def test_animation_keeps_empirical_and_modelled_quantities_separate() -> None:
+    javascript = (ROOT / "site" / "app.js").read_text(encoding="utf-8")
+    assert "seededRandom" in javascript
+    assert "Source value missing" in javascript
+    assert "Visual interpolation between published measurements" in javascript
+    assert "modelled contact cue, not a measured entanglement rate" in javascript
 
 
 def test_site_data_matches_report_and_has_missing_value() -> None:
