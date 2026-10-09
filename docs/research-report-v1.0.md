@@ -47,3 +47,18 @@ machine-readable result are committed with this report.
 
 This is a reproducible reanalysis of published experimental-evolution data, not an independent
 wet-lab replication and not evidence for a universal law of multicellular evolution.
+
+## Amendment 1 (2026-10-09): exact small-sample audit
+
+Post-hoc and not preregistered (`src/snowflake_evolution_lab/smallsample.py`, `reports/post-release-small-sample.json`; all
+results reported). The frozen v1.0 results are unchanged.
+
+- The percentile-bootstrap intervals above, resampling only four replicate means per group, are narrower than exact
+  permutation-inversion intervals: PA 6.455 to 7.923 µm (bootstrap 6.751 to 7.538) and PM 15.649 to 19.210 µm
+  (bootstrap 15.976 to 18.318). Both still exclude zero; no conclusion changes.
+- The gate passes on the preregistered one-sided test. The smallest attainable two-sided probability with 4 v 4 is
+  0.0286 (2/70) in each background, and its Holm adjustment across the two backgrounds is 0.0571.
+- Evolved lines, exact two-sided permutation probability for five PA v five PM populations: transfer 200, 0.325;
+  transfer 400, 0.095; transfer 600, 0.0079 (complete separation: smallest PA 95.7 µm, largest PM 67.7 µm); transfer 1,000,
+  0.0079 (smallest PA 319.6 µm, largest PM 53.2 µm). The divergence emerges between transfers 400 and 600.
+

@@ -17,6 +17,8 @@ helps; it is not sufficient for the later macroscopic phenotype.
 The historical frozen v0.1 analysis remains unchanged: cell aspect ratio and cluster radius were
 positively associated within all five anaerobic lineages (Spearman ρ 0.923–0.967; median 0.956).
 
+**Paper:** [Small Samples, Exact Answers (PDF)](paper/paper.pdf) · [citation and status](paper/README.md) · [version history](history.md)
+
 ## What this contributes
 
 This project contributes a source-compatible reanalysis that separates an immediate engineered

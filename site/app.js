@@ -435,7 +435,7 @@ function drawIntervention() {
   const primary = comparison(condition, "weighted_mean_radius_um_24h");
   document.querySelector("#intervention-inference").textContent =
     `Exact one-sided permutation p = ${primary.exact_one_sided_permutation_probability.toFixed(4)}; ` +
-    `Holm-adjusted p = ${primary.holm_adjusted_probability.toFixed(4)}. Biological inference unit: replicate strain (n = 4 per group).`;
+    `Holm-adjusted p = ${primary.holm_adjusted_probability.toFixed(4)}. Biological inference unit: replicate strain (n = 4 per group). The test is one-sided: with 4 v 4 the smallest attainable two-sided probability is 0.0286 (Holm 0.0571 across the two backgrounds), so this sits at the limit of what four replicates can show.`;
 }
 
 function copyColor(copy) {

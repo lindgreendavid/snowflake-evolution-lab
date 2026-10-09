@@ -1,0 +1,89 @@
+{
+  "engineered": {
+    "PA": {
+      "difference_4n_minus_2n": 7.141668616931749,
+      "exact_one_sided_probability": 0.014285714285714285,
+      "exact_permutation_interval_95": [
+        6.454927229412375,
+        7.923497273492266
+      ],
+      "exact_two_sided_probability": 0.02857142857142857,
+      "replicate_values_2n": [
+        19.844429037934,
+        20.162711656077,
+        20.354578932226,
+        20.266252434425
+      ],
+      "replicate_values_4n": [
+        27.461585902557,
+        27.768368124696,
+        27.159794736749,
+        26.804897764387
+      ],
+      "smallest_attainable_two_sided_probability": 0.02857142857142857
+    },
+    "PM": {
+      "difference_4n_minus_2n": 17.007126243240254,
+      "exact_one_sided_probability": 0.014285714285714285,
+      "exact_permutation_interval_95": [
+        15.64947579698504,
+        19.2101062126355
+      ],
+      "exact_two_sided_probability": 0.02857142857142857,
+      "replicate_values_2n": [
+        25.901532763203,
+        25.652145738923,
+        25.995304544614,
+        26.012223579403
+      ],
+      "replicate_values_4n": [
+        42.919617242842,
+        41.657415644792,
+        42.148498355728,
+        44.864180355742
+      ],
+      "smallest_attainable_two_sided_probability": 0.02857142857142857
+    },
+    "holm_adjusted_two_sided_across_backgrounds": 0.05714285714285714
+  },
+  "label": "POST-HOC (not preregistered): exact small-sample inference",
+  "longitudinal": {
+    "1000": {
+      "completely_separated": true,
+      "exact_two_sided_probability": 0.007936507936507936,
+      "max_pm_um": 53.2256678637685,
+      "min_pa_um": 319.648938805016,
+      "n_pa": 5,
+      "n_pm": 5,
+      "smallest_attainable_two_sided_probability": 0.007936507936507936
+    },
+    "200": {
+      "completely_separated": false,
+      "exact_two_sided_probability": 0.3253968253968254,
+      "max_pm_um": 44.6644865787064,
+      "min_pa_um": 39.773354793108,
+      "n_pa": 5,
+      "n_pm": 5,
+      "smallest_attainable_two_sided_probability": 0.007936507936507936
+    },
+    "400": {
+      "completely_separated": false,
+      "exact_two_sided_probability": 0.09523809523809523,
+      "max_pm_um": 61.2383202469298,
+      "min_pa_um": 44.1309298086683,
+      "n_pa": 5,
+      "n_pm": 5,
+      "smallest_attainable_two_sided_probability": 0.007936507936507936
+    },
+    "600": {
+      "completely_separated": true,
+      "exact_two_sided_probability": 0.007936507936507936,
+      "max_pm_um": 67.7262028531605,
+      "min_pa_um": 95.7334641486717,
+      "n_pa": 5,
+      "n_pm": 5,
+      "smallest_attainable_two_sided_probability": 0.007936507936507936
+    }
+  },
+  "schema_version": 1
+}

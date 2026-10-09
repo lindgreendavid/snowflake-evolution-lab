@@ -1,0 +1,125 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black,citecolor=blue!50!black}
+
+\title{Small Samples, Exact Answers:\\
+Genome Duplication and the Evolution of Macroscopic Size\\
+in Snowflake Yeast, Re-examined with Exact Inference}
+\author{David Lindgreen}
+\date{October 9, 2026 \\[2pt] \small Version 0.1.0 \quad Preprint, not peer reviewed}
+
+\emergencystretch=3em
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We re-analyse public source data from the long-term snowflake-yeast multicellularity evolution experiment (Tong et
+al., 2025)~\cite{tong2025} to ask whether whole-genome duplication is sufficient for macroscopic size. Engineered
+tetraploids have a larger 24-hour cluster radius than diploids in both genetic backgrounds tested (PA: $+7.14\,\mu$m, ratio 1.354;
+PM: $+17.01\,\mu$m, ratio 1.657), yet evolved PM populations that were already about tetraploid stayed small
+(at most 67.7\,$\mu$m through transfer 600 and 53.2\,$\mu$m at transfer 1{,}000) while all five PA populations exceeded
+300\,$\mu$m by transfer 1{,}000. Genome duplication therefore helps but is not sufficient. The original analysis used percentile
+bootstrap intervals from four replicate strains per group, which are too narrow at that sample size: exact permutation-inversion
+intervals are 1.5 to 1.9 times wider (PA 6.46 to 7.92\,$\mu$m; PM 15.65 to 19.21\,$\mu$m), though no conclusion changes. The
+preregistered gate passes only because the test was one-sided: the smallest attainable two-sided probability with four against
+four replicates is 0.0286, and its Holm adjustment across two backgrounds is 0.0571. An exact five-against-five test shows the PA/PM
+divergence is complete by transfer 600 (probability 0.0079, the minimum attainable) but not yet at transfers 200 or 400.
+\end{abstract}
+
+\section{Question}
+Tong et al.\ evolved snowflake yeast for about 1{,}000 daily transfers and linked genome duplication, cell elongation and packing to
+macroscopic multicellularity. The question here is narrow: given the authors' public tables, (i) does engineered tetraploidy
+increase cluster size, and (ii) is tetraploidy sufficient for the later macroscopic phenotype? This is a computational reanalysis of
+published data, not an independent wet-lab replication.
+
+\section{Data and frozen analysis}
+Inputs were derived from the authors' public repository at a pinned commit, each file verified by SHA-256 before use (and re-derived
+identically for this paper). The frozen analysis aggregates measurements within biological replicate (four replicate strains per ploidy
+per background) before inference, uses an exact one-sided permutation probability over all $\binom{8}{4}=70$ allocations, a Holm
+adjustment across the two backgrounds, and a 20{,}000-resample percentile bootstrap of replicate means for the interval. The
+longitudinal comparison uses five PA (anaerobic) and five PM (mixotrophic) evolved populations at transfers 200, 400, 600 and 1{,}000.
+
+\section{Results of the frozen analysis}
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lcccc}
+\toprule
+Background & 2N radius ($\mu$m) & 4N radius ($\mu$m) & Difference ($\mu$m) & Ratio\\
+\midrule
+PA & 20.157 & 27.299 & +7.142 & 1.354\\
+PM & 25.890 & 42.897 & +17.007 & 1.657\\
+\bottomrule
+\end{tabular}
+\caption{Engineered 2N versus 4N 24-hour biomass-weighted mean cluster radius (four replicate strains per group).}
+\end{table}
+The frozen one-sided exact probability is $1/70=0.0143$ in each background, 0.0286 after Holm adjustment. Evolved lines: all 40
+population-time G1 peaks are at least 3.489N, so every sampled population was already about tetraploid; the PA/PM mean-radius ratio is
+6.669 at transfer 600 and 8.859 at transfer 1{,}000.
+
+\section{Exact small-sample audit (post-hoc)}
+\paragraph{Intervals.}
+We replaced the bootstrap interval by the exact permutation-inversion interval: the set of shifts not rejected by the two-sided exact
+test~\cite{good2005}. With only four replicates per group a percentile bootstrap undercovers.
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lcc}
+\toprule
+Background & Frozen bootstrap 95\% ($\mu$m) & Exact inversion 95\% ($\mu$m)\\
+\midrule
+PA & 6.751 to 7.538 & 6.455 to 7.923\\
+PM & 15.976 to 18.318 & 15.649 to 19.210\\
+\bottomrule
+\end{tabular}
+\caption{Interval for the 4N minus 2N radius difference. Both exclude zero.}
+\end{table}
+\paragraph{The gate depends on one-sidedness.}
+With 4 against 4 there are 70 allocations, so the smallest attainable two-sided probability is $2/70=0.0286$, attained here in both
+backgrounds. Holm's adjustment across two tests gives $0.0571>0.05$. The preregistered directional hypothesis justifies the one-sided
+test (Holm 0.0286), but the conclusion is at the limit of what four replicates per group can establish.
+\paragraph{Evolved lines.}
+\begin{table}[h]
+\centering\small
+\begin{tabular}{rcccc}
+\toprule
+Transfer & Smallest PA ($\mu$m) & Largest PM ($\mu$m) & Separated? & Exact two-sided $p$\\
+\midrule
+200 & 39.8 & 44.7 & no & 0.325\\
+400 & 44.1 & 61.2 & no & 0.095\\
+600 & 95.7 & 67.7 & yes & 0.0079\\
+1000 & 319.6 & 53.2 & yes & 0.0079\\
+\bottomrule
+\end{tabular}
+\caption{Exact permutation test, five PA against five PM populations; the minimum attainable two-sided probability is $2/252=0.0079$.}
+\end{table}
+
+\section{Discussion}
+The two lines of evidence answer different questions. The engineered contrast shows an immediate size benefit of duplication in these
+strains; the evolved comparison shows that populations which had duplicated their genomes (all G1 peaks at least 3.489N) did not all
+become macroscopic, so duplication is not sufficient and other evolved changes separate PA from PM. The divergence emerges between
+transfers 400 and 600. The exact tests do not change the direction of any frozen conclusion; they correct the stated precision of
+the replicate-level intervals, and they show how thin the formal evidence is at four replicates per group. Neither analysis tests
+necessity, a universal threshold, or the authors' mechanical account of entanglement, which the public tables do not measure.
+
+\section{Limitations}
+Source-author data from one experimental system; four replicate strains per group; the exact audit covers the primary radius outcome
+only (the frozen results also report cell volume and aspect ratio, whose bootstrap intervals have the same limitation); permutation
+inversion is evaluated on a fine grid. This is not an independent replication and is not evidence for a general law.
+
+\section*{Reproducibility and AI assistance}
+Code, frozen results, the exact audit and tests:\\
+\url{https://github.com/lindgreendavid/snowflake-evolution-lab}\\
+Interactive laboratory:\\
+\url{https://lindgreendavid.github.io/snowflake-evolution-lab/}\\
+The analysis code, tests and drafts of this text were produced with substantial assistance from an AI system (Claude, Anthropic);
+the author is responsible for the content.
+
+\begin{thebibliography}{9}
+\bibitem{tong2025} K.~Tong et al., Genome duplication in a long-term multicellularity evolution experiment,
+\emph{Nature} (2025), doi:10.1038/s41586-025-08689-6.
+\bibitem{good2005} P.~I. Good, \emph{Permutation, Parametric, and Bootstrap Tests of Hypotheses}, 3rd ed., Springer (2005).
+\end{thebibliography}
+\end{document}
