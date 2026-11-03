@@ -3,9 +3,9 @@
 > Genome duplication makes snowflake yeast cells and clusters larger—but is it sufficient for the
 > later evolution of macroscopic multicellularity?
 
-Part of the [Lab Notes research portfolio](https://blog-interactive.lindgreendavid.workers.dev/).
+Part of the [Lab Notes research portfolio](https://notes.lindgreendavid.com/).
 
-**Interactive laboratory:** <https://lindgreendavid.github.io/snowflake-evolution-lab/>
+**Interactive laboratory:** <https://lindgreendavid.com/snowflake-evolution-lab/>
 
 ## Stable v1.0 result
 
